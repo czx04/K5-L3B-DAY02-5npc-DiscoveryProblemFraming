@@ -56,6 +56,40 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 
 -
 
+### Dư Văn Hùng - 2A202603975
+
+**Phần việc phụ trách:**
+
+- Nhóm trưởng: fork repo, tạo nhánh, review và merge PR của các thành viên.
+- CP3: hội tụ nhóm (mục 2 của báo cáo nhóm), pitch 3 candidate từ báo cáo cá nhân (Card #1 là ReviewRadar).
+- CP4: kiểm chứng bằng survey và research giải pháp đã có (mục 3 của báo cáo nhóm).
+
+**Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
+
+- **2.1–2.2 Pitch và cluster:** tổng hợp 15 candidate của 5 người vào bảng pitch, gom thành 4 cluster theo pattern chung (hồ sơ tuân thủ, tổng hợp thông tin để chuyển giao, dò lỗi trong dữ liệu lớn, học/truyền đạt kiến thức lặp lại).
+- **2.3 OST rút gọn:** 1 outcome, 3 opportunity (thông tin rải rác ở phòng ban, hợp đồng bên thứ ba, hồ sơ đạt lần đầu và cập nhật định kỳ). Gạch 4 ý là solution đội lốt opportunity và ghi rõ từng ý chuyển sang mục nào.
+- **2.4 Chấm điểm shortlist:** chấm 3 candidate cao nhất theo 7 tiêu chí; nhóm chọn #1 (28 điểm), loại #10 ReviewRadar của mình (26 điểm) vì dễ thành "làm lại AppFollow". Ghi lý do loại từng candidate còn lại.
+- **3.1 Assumption map:** 6 giả định theo 4 loại Value / Usability / Feasibility / Viability, chọn 4 giả định (#1–#4) kiểm chứng trước.
+- **3.2 Kiểm chứng:** làm survey Google Form 10 câu, ẩn danh, thu được 14 người trả lời. Tổng hợp tín hiệu xác nhận / phản bác cho từng câu, kết luận từng giả định, và ghi nhóm đã sửa problem thế nào (thu hẹp actor, sửa baseline, gộp bottleneck bước 1–2).
+- **3.3 Research:** so sánh 3 nhóm giải pháp đã có (OneTrust, AesirX, dịch vụ tư vấn trong nước) kèm link, bước giải được, khoảng trống. Kết luận đối thủ thật là thuê tư vấn, giải pháp nên giúp khâu gom nội bộ chứ không thay luật sư.
+- Có dùng AI (Claude) để dựng khung OST, bảng chấm điểm, assumption map và gợi ý đối thủ. Số liệu survey và kết luận giả định do mình tự tổng hợp từ kết quả Google Form; chi tiết ghi ở bảng "Dùng AI" trong báo cáo cá nhân.
+
+**Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
+
+- `report/team/group_report.md`: mục 1, 2.1–2.4, 3.1–3.3.
+- Commit `362498e`: điền OST (2.3), chấm điểm shortlist (2.4) và CP4 (mục 3).
+- Commit `50018fe` trên nhánh `gp_hdu`, merge qua PR #6: thêm ảnh kết quả survey và cập nhật mục 3.
+- Commit `a30d9b8`: cập nhật mục 3.2 khi survey tăng từ 9 lên 14 người (hồ sơ người trả lời, bảng tổng hợp, kết luận giả định).
+- Commit `53f3ca3`: điền thành viên và phân công checkpoint trong `TEAM.md`.
+- `report/assets/image.png`, `image-1.png`, `image-2.png`, `image-3.png`, `cp4-interview-snapshot-N.md`: ảnh chụp kết quả survey.
+- Review và merge PR của các thành viên vào `main`, `team`, `group_report` (ví dụ PR #1–#8, #12, #15, #16).
+
+**Điều mình học được từ phần nhóm:**
+
+- Kết luận từ survey nhỏ rất dễ đổi. Lúc 9 người, bước gom hợp đồng bên thứ ba nổi bật nhất (7/9); lên 14 người thì ngang với bước hỏi phòng ban (cùng 10/14). Mỗi kết luận phải ghi kèm số mẫu, và không nên chốt khi mới có vài người trả lời.
+- Khi đổi số liệu nguồn phải báo cả nhóm. Mình cập nhật mục 3.2 theo 14 người nhưng không báo, nên mục 4–5 vẫn viết theo 9 người và phải sửa lại bằng PR hotfix #10. Làm nhóm trưởng thì việc giữ số liệu khớp giữa các mục cũng là việc của mình.
+- Research đối thủ làm thay đổi hướng giải pháp. Trước khi research, nhóm nghĩ đối thủ là phần mềm; sau research thấy đối thủ thật là dịch vụ tư vấn, nên quy trình tương lai chọn hướng hỗ trợ khâu gom nội bộ và "không thay luật sư".
+
 ### Đoàn Trí Hùng - 2A202603959
 
 **Phần việc phụ trách:**
