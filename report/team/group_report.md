@@ -114,7 +114,14 @@ Giả định nhóm kiểm chứng trong buổi này: **#1, #2, #3, #4**, bằng
 
 ### 3.2. Kiểm chứng
 
-Cách đã dùng: **Survey** (Google Form, 10 câu, ẩn danh). 
+Cách đã dùng: **Survey** (Google Form, 10 câu, ẩn danh), **14 người trả lời**. Ảnh chụp kết quả: [report/assets/](../assets/).
+
+Hồ sơ người trả lời:
+
+- Vai trò: DPO/Compliance 6/14, IT/An toàn thông tin 6/14, Nhân sự 2/14.
+- Lĩnh vực: Công nghệ/Phần mềm 7/14, Ngân hàng/Tài chính/Fintech 6/14, Vận tải 1/14.
+- Quy mô: dưới 50 người 1/14, 50–200 người 8/14, 200–1.000 người 5/14, trên 1.000 người 0/14.
+- Đã lập hồ sơ chưa: đã làm xong 6/14, đang làm 5/14, chưa làm 3/14.
 
 Interview snapshot (mỗi buổi phỏng vấn một bảng, hoặc đặt file trong report/assets/cp4-interview-snapshot-N.md):
 
@@ -122,29 +129,29 @@ Tổng hợp:
 
 | Nguồn | Số người / số mẫu | Tín hiệu xác nhận | Tín hiệu phản bác |
 |---|---:|---|---|
-| Survey: thời gian | 9 | 5/9 mất từ 2 tuần trở lên, trong đó 4/9 mất trên 1 tháng | **4/9 chỉ mất 1–2 tuần**, ít hơn mức 2–4 tuần nhóm giả định |
-| Survey: bước tốn thời gian nhất | 9 | Gom hợp đồng bên thứ ba 7/9, hỏi phòng ban 6/9; khớp đúng bottleneck bước 1–2 | Luật sư/DPO rà soát cũng được chọn 5/9, nên bottleneck không chỉ nằm ở khâu gom |
-| Survey: ai làm | 9 | 4/9 tự làm nội bộ, 2/9 nội bộ gom rồi tư vấn rà soát → 6/9 vẫn phải tự gom thông tin | **3/9 thuê tư vấn làm trọn gói**. Với nhóm này, phần mềm cho DPO không có chỗ đứng |
-| Survey: công cụ | 9 | Google Form/bảng hỏi 6/9, Excel/Word 4/9: làm thủ công là chủ yếu | 4/9 nói đã dùng "phần mềm chuyên dụng" nhưng không ghi tên, cần hỏi lại |
-| Survey: cập nhật | 9 | 7/9 cập nhật định kỳ → việc lặp lại, khớp Nghị định 356 | 1 người chưa cập nhật lần nào, 1 người không rõ |
-| Survey: mức khó | 9 | 8/9 chấm 4, 1/9 chấm 5 | Không ai chấm 5 ngoài 1 người; khó nhưng chưa phải "cực kỳ đau" |
+| Survey: thời gian | 14 | 9/14 mất từ 2 tuần trở lên: 2–4 tuần 3/14, **trên 1 tháng 6/14**. Không ai làm xong dưới 1 tuần (0/14) | **4/14 chỉ mất 1–2 tuần**, ít hơn mức 2–4 tuần nhóm giả định; 1/14 không rõ. Một số người đang làm hoặc chưa làm nên con số có thể là ước tính |
+| Survey: bước tốn thời gian nhất (chọn tối đa 2) | 14 | Hỏi phòng ban 10/14 và gom hợp đồng bên thứ ba 10/14, **ngang nhau và cao nhất**; khớp bottleneck bước 1–2. Vẽ sơ đồ luồng 8/14 | Điền mẫu 6/14 và luật sư/DPO rà soát 6/14, nên bottleneck không chỉ nằm ở khâu gom; sửa/bổ sung sau khi bị yêu cầu 4/14 |
+| Survey: ai làm | 14 | Tự làm nội bộ 5/14, nội bộ gom rồi tư vấn rà soát 3/14 → **8/14 vẫn phải tự gom thông tin** (8/11 người đã từng làm) | **3/14 thuê tư vấn làm trọn gói**, với nhóm này phần mềm cho DPO không có chỗ đứng; 3/14 chưa làm lần nào |
+| Survey: công cụ (chọn nhiều) | 14 | Google Form/bảng hỏi 10/14, Excel/Word 7/14: làm thủ công là chủ yếu | **6/14 nói đã dùng "phần mềm chuyên dụng"** nhưng không ghi tên, cần hỏi lại; 3/14 để công ty tư vấn làm hết |
+| Survey: cập nhật | 14 | 11/14 có cập nhật (định kỳ 9/14, khi có thay đổi 2/14) → việc lặp lại, khớp Nghị định 356 | 1/14 chưa cập nhật lần nào, 2/14 không rõ |
+| Survey: mức khó (1–5) | 14 | 10/14 chấm 4–5 (9 người chấm 4, 1 người chấm 5); không ai chấm 1–2 | **4/14 chỉ chấm 3**; chỉ 1 người chấm 5, khó nhưng chưa phải "cực kỳ đau" |
 
 Kết luận cho từng giả định:
 
 | Giả định | Kết quả |
 |---|---|
-| #1 Thời gian + bottleneck | **Xác nhận một phần.** Bottleneck đúng ở khâu gom thông tin, nhưng thời gian dao động lớn (1–2 tuần đến trên 1 tháng) |
-| #2 Tự làm hay thuê | **Xác nhận một phần.** 2/3 vẫn tự gom thông tin, 1/3 thuê trọn gói |
-| #3 Lặp lại | **Xác nhận** (7/9 cập nhật định kỳ) |
-| #4 Công cụ thủ công | **Xác nhận phần lớn.** Còn mở câu hỏi "phần mềm chuyên dụng" là gì |
+| #1 Thời gian + bottleneck | **Xác nhận một phần.** Bottleneck đúng ở khâu gom thông tin (hỏi phòng ban và hợp đồng bên thứ ba cùng 10/14), nhưng thời gian dao động lớn (1–2 tuần đến trên 1 tháng) và khâu rà soát cũng tốn thời gian (6/14) |
+| #2 Tự làm hay thuê | **Xác nhận một phần.** 8/14 (8/11 người đã từng làm) vẫn tự gom thông tin, 3/14 thuê trọn gói |
+| #3 Lặp lại | **Xác nhận** (11/14 có cập nhật, trong đó 9/14 cập nhật định kỳ) |
+| #4 Công cụ thủ công | **Xác nhận một phần.** Google Form/Excel vẫn chiếm đa số, nhưng 6/14 đã dùng "phần mềm chuyên dụng", nên chưa thể kết luận "chưa có phần mềm" |
 
 **Nhóm đã sửa problem thế nào sau kiểm chứng:**
 
-- **Thu hẹp actor:** từ "DPO doanh nghiệp lớn" thành "DPO/IT ở doanh nghiệp **tự gom thông tin nội bộ**, gồm cả khi có tư vấn rà soát", chủ yếu là công ty công nghệ và fintech 50–1.000 người. Loại nhóm thuê tư vấn trọn gói khỏi phạm vi.
-- **Sửa baseline:** từ "2–4 tuần" thành "**1 tuần đến trên 1 tháng**, trung vị khoảng 2 tuần"; target vẫn là dưới 1 tuần.
-- **Mở rộng bottleneck:** bước gom hợp đồng bên thứ ba được nhắc nhiều nhất (7/9), ngang hoặc hơn bước hỏi phòng ban. Hai bước này gộp thành một bottleneck: "biết dữ liệu đi đâu".
-- **Ghi rủi ro:** khâu luật sư/DPO rà soát cũng tốn thời gian (5/9). Nếu bản nháp kém, thời gian rà soát có thể tăng chứ không giảm.
-- **Việc tiếp theo:** phỏng vấn 1–2 người đã chọn "phần mềm chuyên dụng" để biết đó là công cụ gì, giải được bước nào.
+- **Thu hẹp actor:** từ "DPO doanh nghiệp lớn" thành "DPO/IT ở doanh nghiệp **tự gom thông tin nội bộ**, gồm cả khi có tư vấn rà soát", chủ yếu là công ty công nghệ và fintech (13/14 người trả lời) quy mô 50–1.000 người (13/14). Loại nhóm thuê tư vấn trọn gói khỏi phạm vi.
+- **Sửa baseline:** từ "2–4 tuần" thành "**1–2 tuần đến trên 1 tháng**, trung vị rơi vào nhóm **2–4 tuần**" (13 người có câu trả lời: 4 người 1–2 tuần, 3 người 2–4 tuần, 6 người trên 1 tháng). Target vẫn là dưới 1 tuần, mức mà hiện chưa ai trong survey đạt được.
+- **Mở rộng bottleneck:** bước hỏi phòng ban và bước gom hợp đồng bên thứ ba ngang nhau (cùng 10/14). Hai bước này gộp thành một bottleneck: "biết dữ liệu đi đâu". Vẽ sơ đồ luồng (8/14) là bước tốn thời gian kế tiếp.
+- **Ghi rủi ro:** khâu luật sư/DPO rà soát cũng tốn thời gian (6/14). Nếu bản nháp kém, thời gian rà soát có thể tăng chứ không giảm.
+- **Việc tiếp theo:** phỏng vấn 1–2 trong 6 người đã chọn "phần mềm chuyên dụng" để biết đó là công cụ gì, giải được bước nào.
 
 ### 3.3. Research giải pháp đã có
 
@@ -152,7 +159,7 @@ Kết luận cho từng giả định:
 |---|---|---|---|---|---|
 | OneTrust: Data Mapping Automation + module PIA/DPIA | https://www.onetrust.com/news/iapp-data-mapping-automation/ | Bước 1–3: bảng hỏi gửi phòng ban, kiểm kê hệ thống và luồng dữ liệu, sơ đồ luồng; có module DPIA riêng | Nền tảng lớn nhất ngành, có tự động phát hiện và phân loại dữ liệu trên hệ thống | Chưa thấy nguồn chính thức xác nhận hỗ trợ mẫu hồ sơ theo Nghị định 356; giá doanh nghiệp, nặng với công ty 50–200 người | Pattern "bảng hỏi chuẩn gửi từng phòng ban → kiểm kê → sơ đồ luồng" đã là chuẩn; nhóm không cần phát minh lại, khoảng trống là **mẫu Việt Nam + giá vừa sức SME** |
 | AesirX Compliance One: quy trình DPIA cho Luật 91/2025 | https://aesirx.io/blog/aesirx/the-dpia-triage-pipeline-from-trigger-to-dossier-without-a-separate-documentation-project | Từ phân loại khi nào cần DPIA đến hồ sơ; data mapping | Có nói rõ khung pháp lý Việt Nam (Luật 91/2025, Nghị định 356) | Nội dung marketing của nhà cung cấp, nhóm chưa kiểm được trích dẫn điều luật; chưa rõ có điền đúng mẫu hồ sơ không | Đã có đối thủ nhắm đúng thị trường Việt Nam → cần kiểm tra kỹ trước khi kết luận "chưa có phần mềm" |
-| Dịch vụ tư vấn trong nước (Luật Việt An, CyStack, DPO.VN…) | https://luatvietan.vn/tu-van-danh-gia-tac-dong-xu-ly-du-lieu-ca-nhan.html · https://cystack.net/solutions/giai-phap-tuan-thu-nghi-dinh-13-cho-doanh-nghiep/pricing | Bước 4–5: điền mẫu, rà soát pháp lý; có nơi làm trọn gói | Chịu trách nhiệm pháp lý, đúng thứ 3/9 người trong survey chọn | Doanh nghiệp vẫn phải tự cung cấp thông tin nội bộ; không công bố giá; phải trả phí lại mỗi lần cập nhật | Đối thủ thật là **thuê tư vấn**, không phải phần mềm. Giải pháp nên giúp khâu gom nội bộ và xuất ra bộ hồ sơ để tư vấn rà soát nhanh hơn, không thay luật sư |
+| Dịch vụ tư vấn trong nước (Luật Việt An, CyStack, DPO.VN…) | https://luatvietan.vn/tu-van-danh-gia-tac-dong-xu-ly-du-lieu-ca-nhan.html · https://cystack.net/solutions/giai-phap-tuan-thu-nghi-dinh-13-cho-doanh-nghiep/pricing | Bước 4–5: điền mẫu, rà soát pháp lý; có nơi làm trọn gói | Chịu trách nhiệm pháp lý, đúng thứ 3/14 người trong survey chọn (thuê trọn gói) | Doanh nghiệp vẫn phải tự cung cấp thông tin nội bộ; không công bố giá; phải trả phí lại mỗi lần cập nhật | Đối thủ thật là **thuê tư vấn**, không phải phần mềm. Giải pháp nên giúp khâu gom nội bộ và xuất ra bộ hồ sơ để tư vấn rà soát nhanh hơn, không thay luật sư |
 
 
 
