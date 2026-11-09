@@ -8,7 +8,7 @@
 - Tên nhóm: 5npc
 - Thành viên: xem `TEAM.md`
 - Candidate problem được chọn (1 câu): Khi doanh nghiệp phải lập hồ sơ đánh giá tác động xử lý dữ liệu cá nhân theo luật mới, chuyên viên pháp chế/DPO mất 2–4 tuần chủ yếu để đi hỏi từng phòng ban đang thu thập dữ liệu gì, lưu ở đâu, chia sẻ cho ai, trong khi hồ sơ phải đạt ngay lần nộp đầu và cập nhật định kỳ.
-- Quyết định cuối: 
+- Quyết định cuối: Not Yet
 
 ---
 
@@ -388,33 +388,36 @@ Thấp│
 
 | Rủi ro | Câu hỏi | Mức độ rủi ro (Thấp = an toàn / TB / Cao = nguy hiểm) | Lý do / bằng chứng |
 |---|---|---|---|
-| **Value** | Người dùng có thật sự cần và sẽ dùng không? | Trung bình | Survey xác nhận nghẽn ở khâu gom thông tin (hợp đồng bên thứ ba 7/9, hỏi phòng ban 6/9) và việc lặp lại (7/9 cập nhật định kỳ). Nhưng 4/9 chỉ mất 1–2 tuần, 3/9 thuê tư vấn trọn gói, và chỉ 9/14 người trả lời đã thực sự làm hồ sơ |
-| **Usability** | Người dùng có dùng được, có hiểu và sửa được đầu ra của AI không? | Trung bình | Phòng ban chỉ cần xác nhận Đúng/Sai/Bổ sung. Chưa có bằng chứng DPO chấp nhận rà bản nháp do máy soạn (giả định #6) |
-| **Feasibility** | Có đủ dữ liệu, công cụ, kỹ năng để làm không? | Trung bình | Phần bảng hỏi + checklist làm được ngay bằng Google Form/Sheet. Phần AI đọc hợp đồng chưa có tài liệu thật để thử (giả định #5) |
-| **Viability** | Có hợp chi phí, pháp lý, quy định tổ chức không? Ai vận hành? | **Cao** | OneTrust và AesirX (theo bài giới thiệu của họ) có thể đã làm được việc này; nhóm chưa kiểm. Chưa biết doanh nghiệp có cho đưa hợp đồng, tài liệu nội bộ vào công cụ AI bên ngoài không |
+| **Value** | Người dùng có thật sự cần và sẽ dùng không? | Trung bình | Survey 14 người (11/14 đã/đang làm: 6 xong, 5 đang làm) xác nhận nghẽn ở hỏi phòng ban (10/14) và gom hợp đồng bên thứ ba (10/14), mức khó 4–5/5 (10/14) và việc lặp lại (11/14 cập nhật). Tuy nhiên: 4/14 chỉ mất 1–2 tuần, 3/14 thuê tư vấn trọn gói, **6/14 đã dùng "phần mềm chuyên dụng"** chưa rõ tên; AesirX và OneTrust có thể đã giải được một phần; và cần kiểm lại điều kiện miễn trừ trong Luật 91/2025 để chắc nhóm DN 50–200 người thực sự phải lập hồ sơ (phản biện #2 mục 5) |
+| **Usability** | Người dùng có dùng được, có hiểu và sửa được đầu ra của AI không? | Trung bình | Thiết kế Workflow 4.2 & 6.4 chỉ để AI **augment**, xuất theo Mẫu 09/10 quen thuộc kèm **Citation song song + Review Flag** để DPO đối chiếu nhanh hoặc quay về bảng Excel cũ. Tuy nhiên giả định #6 (DPO/luật sư chấp nhận rà bản nháp do máy soạn) mới ở mức bằng chứng 1/5; khảo sát có 6/14 thấy khâu rà soát vốn đã tốn thời gian — nếu bản nháp kém sẽ làm bước HITL chậm hơn tự làm |
+| **Feasibility** | Có đủ dữ liệu, công cụ, kỹ năng để làm không? | Trung bình | Phần bảng hỏi chuẩn + sinh mẫu theo template (bước 1, 5) làm được ngay bằng Rule/Google Form/Sheet, còn kiến trúc AI Workflow (bước 3) khả thi về mặt kỹ thuật LLM. Tuy nhiên giả định #5 (lấy được hợp đồng/tài liệu để thử mà không lộ dữ liệu thật) chưa kiểm (bằng chứng 1/5); nhiều DN 50–200 người chưa có AI được phê duyệt nên bước 3 dễ bị chặn (phản biện #5 mục 5); và AI không rút ngắn được thời gian **chờ phòng ban trả lời** ở bước 2 |
+| **Viability** | Có hợp chi phí, pháp lý, quy định tổ chức không? Ai vận hành? | **Cao** | Nghịch lý bảo mật & pháp lý: đầu vào là hợp đồng đối tác, schema IT và câu trả lời nội bộ thuộc phạm vi bảo vệ của Luật 91/2025; boundary mục 5 cấm đưa lên AI công cộng chưa phê duyệt, trong khi DN 50–200 người thường chưa có hạ tầng LLM enterprise/on-premise được duyệt và khó gánh chi phí vận hành riêng. Ngoài ra hồ sơ có rủi ro phạt tới 5% doanh thu nên DPO/đại diện pháp luật vẫn phải chịu trách nhiệm pháp lý cuối cùng trước Cục A05 |
 
 ### 8.2. Kết luận
 
 **Quyết định:** **Not Yet**
 
-**Lý do:** Viability ở mức Cao nhưng kiểm được nhanh trong 2 tuần. Ba rủi ro còn lại ở mức Trung bình.
+**Lý do:** Viability ở mức **Cao** (vướng quy định bảo mật dữ liệu đầu vào nhạy cảm, hạ tầng AI được duyệt và chi phí/trách nhiệm pháp lý ở DN 50–200 người) và còn nhiều giả định then chốt chưa kiểm (#5, #6, 6/14 *"phần mềm chuyên dụng"*, điều kiện miễn trừ luật), nhưng các điểm này đều kiểm chứng nhanh được trong 2 tuần trước khi quyết định đầu tư xây Workflow. Ba rủi ro còn lại ở mức Trung bình.
 
 **Nếu Not Yet — cần kiểm chứng gì trước:**
 
-- Dùng thử hoặc xin demo OneTrust, AesirX: có xuất được hồ sơ theo mẫu Nghị định 356 không, giá bao nhiêu.
-- Phỏng vấn 2–3 DPO/IT: công ty có cho đưa hợp đồng, tài liệu nội bộ vào công cụ AI không; rà bản nháp có nhanh hơn tự viết không.
+- Hỏi lại 1–2 trong **6 người** đã chọn *"phần mềm chuyên dụng"* ở survey + dùng thử/demo OneTrust, AesirX: công cụ đó là gì, có xuất đúng Mẫu 09/10 theo Nghị định 356 không và chi phí có vừa sức DN 50–200 người không.
+- Kiểm tra điều kiện miễn trừ trong Luật 91/2025/QH15 & Nghị định 356/2025 để xác nhận lại phạm vi actor 50–200 người (chốt khi viết Problem Statement v1 ở mục 7).
+- Phỏng vấn 2–3 DPO/IT ở DN 50–200 người về chính sách an toàn thông tin: có cho phép dùng LLM API enterprise (không lưu dữ liệu) / mô hình nội bộ trên tài liệu đã che PII để chạy bước 3 không (giả định #5).
+- Thử chạy nháp bước 3 trên 1–2 bộ hợp đồng giả lập/ẩn danh (có Citation + Review Flag) rồi nhờ DPO/luật sư đối chiếu thử để đo xem rà nháp có nhanh hơn tự đọc không (giả định #6).
 
 **Ngưỡng dừng** (nếu sau … mà … thì quay về …):
 
-- Nếu sau 2 tuần, OneTrust hoặc AesirX đã làm đúng mẫu Nghị định 356 với giá chấp nhận được → No-Go, dùng công cụ có sẵn.
-- Nếu từ 2/3 DPO được hỏi không cho đưa tài liệu vào AI → bỏ bước AI, chỉ làm bảng hỏi chuẩn + checklist.
-- Nếu pilot bảng hỏi chuẩn ở 1 doanh nghiệp không giảm được ít nhất 30% thời gian gom thông tin → quay về cách làm hiện tại.
+- Nếu sau 2 tuần kiểm tra, AesirX, OneTrust hoặc phần mềm sẵn có trong nhóm 6/14 đã điền đúng mẫu Nghị định 356 với mức giá chấp nhận được → **No-Go** phần tự xây, dùng công cụ có sẵn.
+- Nếu ≥ 2/3 DPO/IT được phỏng vấn không được phép đưa hợp đồng/câu trả lời phòng ban vào AI (kể cả qua API enterprise hoặc đã ẩn danh) → bỏ bước 3 AI, hạ xuống giải pháp **Rule/No AI** (chỉ dùng bảng hỏi chuẩn bước 1 + script điền mẫu từ Excel bước 5).
+- Nếu khi chạy thử AI Workflow trên 2–3 bộ hợp đồng ẩn danh mà DPO vẫn phải sửa lại > 50% dòng trích xuất, hoặc xuất hiện lỗi bỏ sót bên thứ ba/điều khoản không có citation → dừng bước AI, quay về DPO đọc tay điền bảng Excel theo phương án quay về ở mục 4.2.
+- Nếu pilot phần bảng hỏi Rule + template ở 1 doanh nghiệp không giảm được ít nhất 30% thời gian gom thông tin so với baseline của chính họ → quay về quy trình hiện tại.
 
 ---
 
 ## 9. Hạn chế và hướng tiếp theo
 
-- Survey có 14 phản hồi, nhưng chỉ 9 người đã thực sự làm hồ sơ; các con số về thời gian chưa đại diện được thị trường.
+- Survey có 14 phản hồi, trong đó 11/14 người đã hoặc đang làm hồ sơ (6 đã xong, 5 đang làm, 3 chưa làm); các con số về thời gian chưa đại diện được toàn thị trường.
 - Nhóm chưa ai làm pháp chế và chưa phỏng vấn trực tiếp DPO nào; mới nắm quy định qua văn bản Nghị định 356, chưa biết thực tế cơ quan chức năng đánh giá hồ sơ khắt khe đến đâu.
 - Chưa kiểm thực tế OneTrust và AesirX làm được đến đâu với mẫu hồ sơ Việt Nam.
 - Hướng tiếp theo: phỏng vấn 2–3 DPO/IT và demo đối thủ (mục 8.2); #10 ReviewRadar là hướng dự phòng nếu bài này bị No-Go.
