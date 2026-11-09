@@ -51,11 +51,11 @@ Tôi scan 5 problem, đóng vai phòng nghiên cứu sản phẩm của một c�
 | Job Story | Khi công ty phải lập hồ sơ đánh giá tác động xử lý dữ liệu cá nhân theo luật mới, tôi muốn biết mọi phòng ban đang thu thập dữ liệu gì, lưu ở đâu, chia sẻ cho ai, để nộp hồ sơ đạt ngay lần đầu |
 | Actor | Chuyên viên pháp chế hoặc nhân sự bảo vệ dữ liệu (DPO) ở doanh nghiệp không được miễn trừ: xử lý dữ liệu nhạy cảm hoặc có từ 100.000 chủ thể dữ liệu trở lên (bán lẻ, bảo hiểm, fintech, bệnh viện tư) |
 | Thời điểm / bối cảnh | Lần đầu lập hồ sơ sau khi luật có hiệu lực 1/1/2026; sau đó cập nhật định kỳ 6 tháng khi có mục đích xử lý mới hoặc đổi bên xử lý |
-| Quy trình hiện tại (3–7 bước) | 1. Gửi bảng hỏi/phỏng vấn từng phòng ban · 2. Gom hợp đồng với bên xử lý, bên thứ ba · 3. Vẽ sơ đồ luồng dữ liệu · 4. Điền báo cáo theo Mẫu số 09 (và Mẫu số 10 nếu chuyển dữ liệu ra nước ngoài) · 5. Luật sư/DPO rà soát · 6. Gửi Cục A05 – Bộ Công an · 7. Nếu không đạt: bổ sung trong 30 ngày |
+| Quy trình hiện tại (3–7 bước) | 1. Gửi bảng hỏi/phỏng vấn từng phòng ban · 2. Gom hợp đồng với bên xử lý, bên thứ ba · 3. Vẽ sơ đồ luồng dữ liệu · 4. Điền báo cáo theo Mẫu số 10 (và Mẫu số 09 nếu chuyển dữ liệu ra nước ngoài) · 5. Luật sư/DPO rà soát · 6. Gửi cơ quan chuyên trách bảo vệ dữ liệu cá nhân thuộc Bộ Công an · 7. Nếu không đạt: bổ sung trong 30 ngày |
 | Bottleneck (bước nào, mất bao nhiêu phút) | Bước 1–2: gom và đối chiếu thông tin dữ liệu từ nhiều phòng ban, khoảng 7–11 ngày công (Giả định R&D) |
 | Impact (nếu không giải thì sao) | 2–4 tuần công cho lần đầu; hồ sơ không đạt phải bổ sung trong 30 ngày, nếu không có thể bị xử phạt; phạt tối đa tới 5% doanh thu với vi phạm chuyển dữ liệu xuyên biên giới |
 | Success metric (baseline → target) | Thời gian lập hồ sơ lần đầu từ 2–4 tuần xuống dưới 1 tuần; hồ sơ đạt ngay lần nộp đầu |
-| Phương án không dùng AI | Bộ biểu mẫu + checklist theo Mẫu 09/10, bảng hỏi chuẩn cho từng phòng ban; hoặc thuê công ty tư vấn trọn gói |
+| Phương án không dùng AI | Bộ biểu mẫu + checklist theo Mẫu số 10, bảng hỏi chuẩn cho từng phòng ban; hoặc thuê công ty tư vấn trọn gói |
 | Giả thuyết về AI (nếu có) | AI đọc hợp đồng, chính sách quyền riêng tư, danh sách hệ thống để soạn nháp danh mục dữ liệu và sơ đồ luồng; DPO/luật sư duyệt trước khi nộp |
 | Cảm nhận nhanh | Workflow |
 
@@ -67,8 +67,8 @@ HIỆN TẠI — lần đầu khoảng 2–4 tuần công (Giả định R&D)
 [1 Bảng hỏi/phỏng vấn từng phòng ban: 5–8 ngày] ← BOTTLENECK
 → [2 Gom hợp đồng bên xử lý, bên thứ ba: 2–3 ngày] ← BOTTLENECK
 → [3 Vẽ sơ đồ luồng dữ liệu: 2 ngày]
-→ [4 Điền Mẫu 09 / Mẫu 10: 2 ngày] → [5 Luật sư/DPO rà soát: 2 ngày]
-→ [6 Gửi A05: kết quả trong 15 ngày] → [7 Không đạt → bổ sung trong 30 ngày]
+→ [4 Điền Mẫu số 10: 2 ngày] → [5 Luật sư/DPO rà soát: 2 ngày]
+→ [6 Gửi Bộ Công an: kết quả trong 15 ngày] → [7 Không đạt → bổ sung trong 30 ngày]
 ```
 
 ### Problem Card #2 — Gom số liệu kiểm kê khí nhà kính
@@ -140,18 +140,13 @@ HIỆN TẠI — khoảng 1–2 ngày công/gói (Giả định R&D)
 
 ## 4. Tôi đã tham gia phần nào (CP3 → CP7)
 
-| Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
+| Hoạt động | Tôi đã làm gì? | Kết quả |
 |---|---|---|
-| Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
-| Gom cluster / cây OST | | |
-| Chọn candidate problem | | |
-| Kiểm chứng / research | | |
-| Quy trình nhóm | | |
-| Problem Statement | | |
-| Mức can thiệp AI | | |
-| Quyết định | | |
+| Pitch Problem Card | Pitch 3 card: hồ sơ đánh giá tác động dữ liệu cá nhân, kiểm kê khí nhà kính, hồ sơ dự thầu | Card hồ sơ dữ liệu cá nhân được chọn (28 điểm); card khí nhà kính vào shortlist |
+| Phản biện bài bạn khác | Hỏi …: "…" | … |
+| Nhận phản biện | Bị hỏi: "Doanh nghiệp tự làm hay thuê trọn gói tư vấn?" | Đưa thành giả định #2 ở CP4; survey cho thấy 3/9 thuê trọn gói nên nhóm thu hẹp actor về doanh nghiệp tự gom thông tin nội bộ |
+| Kiểm chứng / research | Đọc toàn văn Nghị định 356 để kiểm thông tin nhóm đang dùng | Phát hiện hồ sơ đánh giá tác động dùng Mẫu số 10, không phải Mẫu số 09 như nhóm ghi |
+| Quyết định | Soạn mục 8, 9, 10 của báo cáo nhóm | Nhóm có quyết định Not Yet kèm 3 ngưỡng dừng |
 
 ---
 
@@ -159,12 +154,12 @@ HIỆN TẠI — khoảng 1–2 ngày công/gói (Giả định R&D)
 
 | Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
 |---|---|---|---|---|
-| CP1 Scan | | | | |
-| CP2 Problem Card | | | |
-| CP4 Research | | | | |
-| CP5 Quy trình | | | | |
+| CP1 Scan | Dùng Claude soạn nháp bảng scan và search xem mỗi problem đã có ai làm chưa | Phát hiện cả 5 problem vòng đầu (đối soát hóa đơn, đối chiếu chuyển khoản, phân loại bảo hành, so sánh báo giá, rà hợp đồng) đều đã có công cụ làm, ví dụ MISA AVA đã đối chiếu hóa đơn với PO | Vòng đầu chọn problem theo "dễ thấy ROI" mà chưa kiểm đối thủ; nhiều số liệu là ước lượng | Thay toàn bộ 5 problem bằng các bài toán từ quy định mới 2026; gắn nhãn "Giả định R&D" cho số chưa đo |
+| CP2 Problem Card | Dùng Claude soạn nháp 3 card và đóng vai PM hoài nghi phản biện card #1 | Chỉ ra rủi ro "việc theo đợt" và rủi ro diễn giải luật sai | Gợi ý cho AI tự nộp hồ sơ lên Bộ Công an; đoán sai Mẫu số 09 là mẫu hồ sơ đánh giá tác động | Giữ người có thẩm quyền ký và nộp; đọc văn bản gốc và sửa thành Mẫu số 10 |
+| CP4 Research | Dùng Claude tìm văn bản Nghị định 356 và kiểm các link trong báo cáo có mở được không | Tìm được toàn văn để đối chiếu, không chỉ dựa vào bản tóm tắt của EY | Nhiều kết quả tìm kiếm là bài marketing của nhà cung cấp | Chỉ giữ link đã tự mở; ghi rõ AesirX, OneTrust là "theo bài giới thiệu của họ, chưa kiểm" |
+| CP5 Quy trình | Dùng Claude vẽ workflow hiện tại và tương lai cho card #1 | Tách rõ bước Rule, bước AI, bước con người kiểm tra và phương án quay về | Phạm vi ban đầu quá rộng: nhiều ngành, hai loại hồ sơ, cả 7 bước | Thu hẹp còn bước gom thông tin dữ liệu khách hàng, người dùng là nhân viên không chuyên luật |
 | CP5–6 Problem Statement | | | | |
-| CP6 Mức can thiệp / quyết định | | | | |
+| CP6 Mức can thiệp / quyết định | Dùng Claude soạn nháp mục 8 (4 rủi ro, quyết định, ngưỡng dừng) | Đưa đúng số liệu survey vào từng rủi ro | Bản đầu quá dài và có nhận định pháp lý không có nguồn ("đưa hợp đồng vào AI là chuyển dữ liệu ra nước ngoài") | Rút gọn theo bài mẫu; đổi nhận định đó thành câu hỏi mở cần kiểm chứng |
 
 ---
 
@@ -173,24 +168,40 @@ HIỆN TẠI — khoảng 1–2 ngày công/gói (Giả định R&D)
 Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ cho các câu 6.1–6.6 (không tính 6.7, câu này được chấm riêng ở tiêu chí C5). **Không dùng AI để viết thay.**
 
 **6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
-
+- Học thêm về góc nhìn và cách đặt vấn đề của các bạn khác nhau phản biện bảo vệ quan điểm và cùng nhau tìm ra tiếng nói chung cho bài lab
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
+- Có. Nhóm từng quá tập trung vào cách giải quyết bài toán khi chưa thật sự hiểu rõ vấn đề và chưa biết được actor chính trong trường hợp đó thật sự cần gì và muốn gì cũng như bài toán cụ thể ra sao. Nhóm nhận ra khi các giải pháp cso vẻ tiến triển gần như "đi vào bế tắc" vừa không thực sự giải quyết được bài toán vừa làm mất thời gian và chi phí vận hành. Sau đó cùng nhau ngồi lại đặt ra các vấn đề chính và tìm nguồn gốc vấn đề sau đó đưa ra các giải pháp triệt để.
 
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
+- Thật sự là có nhưng không phải đổi ý mà chỉ lưỡng lự khi chưa đủ kiến thức bảo vệ quan điểm, cụ thể là trong best card được tôi chọn phần topic nó khá vĩ mô khi liên quan đến nhiều ngành như luật pháp, an ninh và hộ kinh doanh, khi nhận được nhiều câu hỏi phản biện về chủ đề và cách làm tôi đã phải dành thêm thời gian nghiên cứu và cùng các bạn trong nhóm tìm hiểu kĩ hơn trước khi chọn lựa và tiếp tục đi theo
 
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
+- Có. Mặc dù số lượng survey không quá nhiều nhưng đủ để cho thấy một thực trạng rằng bộ luật mới bên cạnh các doanh nghiệp đã hiểu và vận hành thành công hoặc ít nhất là có biết đến và bắt đầu vận hành thì còn nhiều doanh nghiệp nhỏ chưa bắt đầu hoặc thậm chí còn chưa biết về điều luật này
 
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
 
+- Domain pháp lý còn lạ, cả nhóm chưa ai làm pháp chế (domain chỉ được chấm 2/5)
+- Ví dụ cụ thể: tưởng hồ sơ đánh giá tác động dùng Mẫu 09, đến khi đọc văn bản gốc mới biết là Mẫu 10
+- Cách xử lý: đọc Điều 18, 19, 20 của Nghị định 356 rồi sửa lại
+
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
+
+- Đổi: đọc văn bản gốc ngay từ đầu, không tin bản tóm tắt của EY.
+- Phản biện mạnh hơn: chất lượng survey.
+    - Nhóm nhận 14 phản hồi trong 26 phút, phần lớn từ cùng một vòng quen biết.
+    - Chỉ 9 người thật sự đã làm hồ sơ.
+    - Vậy mà nhóm vẫn dùng các con số 7/9, 3/9 để ra quyết định.
+- Lẽ ra nên đề xuất: hỏi thêm người ngoài vòng quen, hoặc phỏng vấn 2–3 DPO.
 
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
 
+DPO hoặc nhân viên IT ở doanh nghiệp mất nhiều ngày để tự lập hồ sơ đánh giá tác động dữ liệu cá nhân theo Nghị định 356. Đây là việc không thể làm qua loa, vì Bộ Công an chấm đạt hoặc không đạt, hồ sơ không đạt có thể bị phạt, và hồ sơ phải cập nhật 6 tháng một lần. Chỗ nghẽn không nằm ở bước điền mẫu mà ở việc biết dữ liệu đang đi đâu: hỏi từng phòng ban và gom hợp đồng với bên thứ ba. Thước đo thành công là thời gian lập hồ sơ lần đầu, giảm từ khoảng 2 tuần xuống dưới 1 tuần. Công cụ không kết luận về pháp lý và không tự nộp hồ sơ, DPO hoặc luật sư luôn duyệt trước. Nhóm đang nghiêng về Rule (bảng hỏi cộng checklist) và chỉ thêm AI ở bước đọc hợp đồng khi có bằng chứng Rule chưa đủ. Quyết định là Not Yet: còn phải kiểm OneTrust và AesirX đã làm được mẫu Việt Nam chưa, và doanh nghiệp có cho đưa tài liệu nội bộ vào AI không.
 ---
 
 ## 7. Tài liệu tham khảo
 
-- EY Việt Nam — Nghị định 356/2025/NĐ-CP (đã tự mở): https://www.ey.com/vi_vn/technical/tax/tax-and-law-updates/nghi-dinh-so-356-2025-nd-cp-quy-dinh-chi-tiet-mot-so-dieu-va-bien-phap-thi-hanh-luat-bao-ve-du-lieu-ca-nhan
+- Nghị định 356/2025/NĐ-CP, toàn văn (Điều 18, 19, 20, 42): https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Nghi-dinh-356-2025-ND-CP-huong-dan-Luat-Bao-ve-du-lieu-ca-nhan-687428.aspx
+- EY Việt Nam — tóm tắt Nghị định 356/2025/NĐ-CP (đã tự mở): https://www.ey.com/vi_vn/technical/tax/tax-and-law-updates/nghi-dinh-so-356-2025-nd-cp-quy-dinh-chi-tiet-mot-so-dieu-va-bien-phap-thi-hanh-luat-bao-ve-du-lieu-ca-nhan
 - Tuổi Trẻ (25/6/2026) — Kiểm kê khí nhà kính: có doanh nghiệp gửi 3 lần, 3 bộ số liệu khác nhau (đã tự mở): https://tuoitre.vn/kiem-ke-khi-nha-kinh-co-doanh-nghiep-gui-3-lan-3-bo-so-lieu-khac-nhau-100260625163229417.htm
 - MISA AMIS — AI Agent kiểm soát hóa đơn và chứng từ tự động (đã tự mở): https://amis.misa.vn/259621/ai-agent-kiem-soat-hoa-don-va-chung-tu-tu-dong/
 - Báo Đầu tư — phạt 5% doanh thu khi vi phạm chuyển dữ liệu xuyên biên giới (cần tự mở): https://baodautu.vn/to-chuc-vi-pham-quy-dinh-chuyen-du-lieu-ca-nhan-xuyen-bien-gioi-bi-phat-5-doanh-thu-d314379.html
