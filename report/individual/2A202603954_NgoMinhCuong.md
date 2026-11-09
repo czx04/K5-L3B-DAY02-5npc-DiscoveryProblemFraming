@@ -143,16 +143,16 @@ HIỆN TẠI — 22 phút / đơn khiếu nại (Tổng ~2.5 - 3.5 tiếng/ngày
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
-| Gom cluster / cây OST | | |
-| Chọn candidate problem | | |
-| Kiểm chứng / research | | |
-| Quy trình nhóm | | |
-| Problem Statement | | |
-| Mức can thiệp AI | | |
-| Quyết định | | |
+| Pitch Problem Card | Pitch Problem Card #1: Bàn giao ca trực sự cố kỹ thuật (On-call Handover) cho kỹ sư SRE/DevOps. | Đóng góp một bài toán kỹ thuật có dữ liệu thời gian đo lường rõ ràng (40 phút/ca) vào bảng chọn shortlist của nhóm. |
+| Phản biện bài của bạn khác | Đặt câu hỏi phản biện cho Hoàng Minh Quyền (về hồ sơ DPIA dữ liệu cá nhân): *"Doanh nghiệp lớn thường thuê công ty luật/Big4 tư vấn trọn gói, còn doanh nghiệp nhỏ có tự làm bằng công cụ này không?"* và cho Đoàn Trí Hùng (về tài liệu tiếng Nhật): *"Rào cản bảo mật của khách hàng Nhật rất khắt khe, liệu khách hàng có cấp phép cho tool của mình xử lý tài liệu không?"* | Buộc Quyền phải định hình lại tệp khách hàng mục tiêu là doanh nghiệp tầm trung (50–200 người) không đủ ngân sách thuê Big4 mỗi 6 tháng; giúp nhóm nhận diện rào cản bảo mật dữ liệu doanh nghiệp là yếu tố sống còn. |
+| Nhận phản biện | Câu hỏi tôi nhận được từ Quyền: *"Kỹ sư ca sau có tin tưởng bản tóm tắt tự động không hay vẫn phải mở lại từng thread Slack để đọc chi tiết?"* | Tôi đã sửa gì: Nhận ra bài toán On-call của mình có thể giải quyết tốt tới 70–80% chỉ bằng Rule-based webhook kết hợp PagerDuty/Jira mà không nhất thiết cần đến Generative AI. Do đó, tôi đã chủ động đồng thuận chuyển hướng ưu tiên sang bài toán DPIA của Quyền vì value lớn hơn và thị trường cấp bách hơn. |
+| Gom cluster / cây OST | Cùng nhóm phân loại 12 candidate thành 4 cụm. Trực tiếp phụ trách tổng hợp Cluster B (Vận hành CNTT & Phát triển phần mềm) và tham gia xây dựng cây OST rút gọn với Outcome cốt lõi là cắt giảm 70% thời gian tuân thủ pháp lý dữ liệu. | Giúp nhóm gạch bỏ các ý tưởng giải pháp trá hình như "Chatbot tư vấn luật" hay "Agent tự động nộp hồ sơ lên Bộ Công an". |
+| Chọn candidate problem | Cùng chấm điểm shortlist 3 ứng viên hàng đầu theo 7 tiêu chí; bỏ phiếu cho Candidate #1 của Quyền (33/35 điểm). | Thống nhất 100% quyết định chọn bài toán DPIA Dữ liệu cá nhân theo Nghị định 356/2025/NĐ-CP. |
+| Kiểm chứng / research | **Chủ trì khâu khảo sát thực tế (Survey Lead)**: Thiết kế và phân tích bảng khảo sát từ 14 chuyên gia (DPO/Compliance, IT Security, Fintech, Phần mềm). Trích xuất các số liệu then chốt: 71.4% kẹt ở hợp đồng bên thứ 3 và câu hỏi phòng ban; 64.3% mất trên 2 tuần đến 1 tháng; 71.4% đánh giá khó khăn mức 4–5/5. | Cung cấp bằng chứng thực nghiệm thép giúp nhóm định lượng được bottleneck và nhu cầu cập nhật định kỳ (64.3%). |
+| Quy trình nhóm | Phản biện quy trình Hiện tại (As-Is) và Tương lai (To-Be) do Hà thiết kế; nhấn mạnh việc phải có bước tiền xử lý lọc PII thật (Redaction) và cơ chế Fallback thủ công khi độ tin cậy < 85%. | Đảm bảo quy trình đáp ứng tiêu chuẩn an toàn thông tin, không làm rò rỉ dữ liệu khách hàng lên mô hình AI. |
+| Problem Statement | Cùng Quyền hoàn thiện Problem Statement v0 và v1; trực tiếp đưa các số liệu từ khảo sát 14 người vào phần Success Metric và Impact. | Chuẩn hóa các chỉ số đo lường: Giảm từ trên 1 tháng xuống dưới 4 ngày công; Recall dữ liệu nhạy cảm >= 95%. |
+| Mức can thiệp AI | Thảo luận và bảo vệ lựa chọn mức **AI Workflow** có Human-In-The-Loop; sử dụng số liệu khảo sát để trả lời 2 câu hỏi của Google PAIR (chứng minh DPO cần Augment chứ không Automate, và Bỏ sót nguy hiểm hơn Báo nhầm). | Hoàn thiện lập luận chặt chẽ cho Mục 6 nhóm, đạt điểm tối đa tiêu chí C10. |
+| Quyết định | Tham gia đánh giá 4 rủi ro, xác định tiêu chí Pilot nhỏ nhất (doanh nghiệp bán lẻ 100–300 người) và định lượng Ngưỡng dừng (Kill criteria) nếu recall < 80%. | Đồng thuận đưa ra quyết định GO với điều kiện pilot an toàn. |
 
 ---
 
@@ -160,35 +160,52 @@ HIỆN TẠI — 22 phút / đơn khiếu nại (Tổng ~2.5 - 3.5 tiếng/ngày
 
 | Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
 |---|---|---|---|---|
-| CP1 Scan | | | | |
-| CP2 Problem Card | | | | |
-| CP4 Research | | | | |
-| CP5 Quy trình | | | | |
-| CP5–6 Problem Statement | | | | |
-| CP6 Mức can thiệp / quyết định | | | | |
+| CP1 Scan | Dùng AI để mở rộng góc nhìn vận hành thực tế ngoài phạm vi trường học và kỹ thuật phần mềm. | Gợi ý góc nhìn rất hay về việc tìm video đóng gói TMĐT (#4) và đối soát điều khoản tính phí cloud (#6). | AI gợi ý các ý tưởng rất viển vông và chung chung như "Trợ lý AI quản lý toàn bộ công việc cá nhân" hoặc "AI tự động phát hiện gian lận thi cử". | Tôi loại bỏ ngay các gợi ý đó vì là giải pháp trá hình, không có quy trình cụ thể và đụng chạm chính sách bảo mật phức tạp; chỉ giữ lại các vấn đề đo được bằng phút. |
+| CP2 Problem Card | Thử thách phản biện điểm yếu của Problem Card #1 (On-call Handover). | Chỉ ra rằng baseline 40 phút/ca có thể bị dao động mạnh giữa ngày cao điểm sự cố và ngày êm đềm. | AI đề xuất phương án cho Agent tự động gửi tin tóm tắt vào kênh Slack chung mà không cần người duyệt. | Tôi bác bỏ hoàn toàn vì vi phạm ranh giới an toàn: Kỹ sư trực ca phải là người chịu trách nhiệm và duyệt nội dung trước khi gửi để tránh báo sai trạng thái hệ thống. |
+| CP4 Research & Kiểm chứng | Hỗ trợ viết script Python để trích xuất, làm sạch và tính toán tỷ lệ phần trăm từ file CSV xuất từ Google Sheets khảo sát. | Tính toán nhanh phân bố vai trò, thời gian làm hồ sơ và các bước mất nhiều thời gian nhất từ 14 bản ghi khảo sát. | AI nhận định hời hợt rằng "doanh nghiệp không quan tâm đến quy định mới" khi thấy có 3/14 công ty chưa làm. | Tôi đối chiếu lại bối cảnh pháp lý: 3 công ty chưa làm là do quy định có hiệu lực từ 1/1/2026 nên họ đang trong giai đoạn chuẩn bị, không phải họ không quan tâm; 78.6% đã và đang làm là minh chứng cho tính cấp bách. |
+| CP5 Quy trình | Hỗ trợ phác thảo cú pháp Mermaid cho quy trình To-Be tích hợp các mắt xích công nghệ. | Gợi ý cấu trúc trực quan phân chia giữa khối Rule-based và khối LLM trích xuất. | AI vẽ luồng dữ liệu bỏ qua bước xử lý lỗi (Exception handling) khi tài liệu scan bị mờ hoặc hợp đồng phi chuẩn. | Tôi và nhóm đã bổ sung nhánh Fallback: Tự động đánh cờ Flag và chuyển sang giao diện nhập liệu thủ công có gợi ý ngữ cảnh khi Confidence score < 85%. |
+| CP5–6 Problem Statement | Chuẩn hóa diễn đạt câu chữ cho Problem Statement v1 và bộ tiêu chí Eval. | Cấu trúc hóa các trường thông tin gọn gàng, đúng thuật ngữ kỹ thuật AI (Entity Recall, Citation Accuracy). | AI đưa ra các chỉ số mơ hồ như "hồ sơ đạt chất lượng cao", "tiết kiệm thời gian đáng kể". | Tôi đã thay thế toàn bộ bằng các con số định lượng dựa trên số liệu khảo sát: Rút ngắn từ >1 tháng xuống < 4 ngày; Tỷ lệ bao phủ trường dữ liệu Mẫu 09 đạt 100%. |
+| CP6 Mức can thiệp / quyết định | Thử nghiệm prompt yêu cầu AI bảo vệ phương án chuyển lên mức Autonomous Agent. | Liệt kê các lợi ích lý thuyết của việc tự động hóa tối đa quy trình. | AI cho rằng có thể dùng Agent tự động ký số và nộp hồ sơ trực tiếp lên cổng Bộ Công an để tối ưu 100% thời gian. | Tôi và nhóm kiên quyết bác bỏ: Trong lĩnh vực pháp lý và bảo vệ dữ liệu, trách nhiệm pháp nhân thuộc về con người; trao quyền tự trị cho Agent là vi phạm nghiêm trọng nguyên tắc quản trị rủi ro. |
 
 ---
 
 ## 6. Reflection (CP7)
 
-Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ cho các câu 6.1–6.6 (không tính 6.7, câu này được chấm riêng ở tiêu chí C5). **Không dùng AI để viết thay.**
+### 6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?
+Khi nghe các bạn trong nhóm pitch top 3 problems, bài học lớn nhất tôi nhận được là **sự khác biệt giữa một "bài toán nội bộ nhóm kỹ thuật" và một "nỗi đau bắt buộc cấp doanh nghiệp"**. Ban đầu, tôi rất tâm đắc với đề tài *Bàn giao ca trực sự cố kỹ thuật (On-call Handover)* của mình vì bản thân từng trải qua cảm giác mệt mỏi sau ca trực. Tuy nhiên, khi nghe Hoàng Minh Quyền pitch về *Hồ sơ đánh giá tác động xử lý dữ liệu cá nhân (DPIA)* theo Nghị định 356/2025/NĐ-CP, tôi nhận ra bài toán của mình còn khá hạn hẹp. Bài của Quyền gắn liền với sự thay đổi của khung khổ pháp lý quốc gia (có hiệu lực 1/1/2026), áp dụng trên diện rộng cho hàng nghìn doanh nghiệp và chế tài phạt lên tới 5% doanh thu. Nghe bài của Quyền giúp tôi mở rộng tư duy từ góc nhìn thuần kỹ sư phần mềm sang tư duy giải quyết bài toán kinh doanh và tuân thủ pháp lý có giá trị thương mại thật.
 
-**6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
+### 6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?
+Nhóm chúng tôi đã từng rơi vào cái bẫy "solution-first" rất rõ ở giai đoạn đầu của CP3. Khi vừa thống nhất chọn bài toán bảo vệ dữ liệu cá nhân, một thành viên lập tức đề xuất: *"Hãy làm một Chatbot AI tư vấn luật bảo vệ dữ liệu trên Telegram hoặc Slack để nhân viên vào hỏi đáp"*. Cả nhóm suýt nữa đã đồng ý vì thấy chatbot rất quen thuộc và dễ demo. Rất may, khi nhóm trưởng yêu cầu vẽ cây Opportunity Solution Tree (OST), chúng tôi buộc phải tự hỏi: *"Outcome thật sự mà DPO mong muốn là gì?"*. DPO không cần một con chatbot để giải thích luật, vì bản thân họ đã hiểu luật; nỗi đau thật sự của họ là **phải đi gom thông tin phân tán từ hàng chục phòng ban và đọc hàng chục hợp đồng đối tác để điền vào Mẫu 09**. Nhận ra điều đó, nhóm đã lập tức gạch bỏ ý tưởng Chatbot và chuyển trọng tâm sang xây dựng quy trình AI Workflow bóc tách dữ liệu và hỗ trợ điền biểu mẫu.
 
-**6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
+### 6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.
+Tôi đã có một lần đổi ý mang tính bước ngoặt ở buổi họp chọn shortlist (CP3). Ban đầu tôi bảo vệ rất quyết liệt đề tài On-call Handover của mình và cho rằng nó dễ làm nhất. Nhưng bạn Quyền đã đặt lại cho tôi một câu hỏi phản biện rất sắc: *"Nếu công ty chỉ cần tạo một checklist Jira bắt buộc kết hợp Webhook bắn vào Slack thì đã giải quyết được 70–80% vấn đề chưa? Có nhất thiết phải dùng đến Generative AI không?"*. Câu hỏi này đánh trúng điểm yếu của đề tài. Tôi nhận ra bài toán của mình hoàn toàn có thể giải quyết bằng Rule-based đơn giản mà không cần đến AI phức tạp. Tôi nhận thấy nếu cố chấp làm thì bài lab sẽ rất gượng ép ở phần so sánh mức can thiệp AI. Do đó, tôi đã chủ động rút lui bài của mình và bỏ phiếu ủng hộ bài toán DPIA của Quyền, vì đó mới là bài toán đòi hỏi khả năng đọc hiểu ngôn ngữ tự nhiên phi cấu trúc thực sự của LLM.
 
-**6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
+### 6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?
+Là người trực tiếp phụ trách phân tích số liệu từ bảng khảo sát 14 chuyên gia (DPO, IT Security, Fintech), kết quả khiến tôi vô cùng bất ngờ ở câu hỏi về bước mất nhiều thời gian nhất. Ban đầu, tôi đinh ninh rằng việc *"Điền mẫu hồ sơ theo quy định"* hoặc *"Vẽ sơ đồ luồng dữ liệu"* sẽ là khâu tốn công nhất. Nhưng số liệu thực tế chỉ ra một sự thật hoàn toàn khác: **71.4% (10/14 người) khẳng định khâu mất thời gian nhất chính là "Gom hợp đồng với bên thứ ba (cloud, vận chuyển, agency...)"**, ngang bằng với tỷ lệ đi hỏi các phòng ban (71.4%). Hóa ra, các công ty hiện nay tích hợp quá nhiều dịch vụ SaaS và đối tác bên ngoài, mỗi bên lại có một bản hợp đồng bảo mật (DPA) dài 30–50 trang viết bằng nhiều thứ tiếng khác nhau. Phát hiện bất ngờ này đã giúp nhóm điều chỉnh trọng tâm của hệ thống AI: Tập trung xử lý bóc tách hợp đồng bên thứ ba thay vì chỉ chăm chăm điền form.
 
-**6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
+### 6.5. Điều khó nhất khi viết Problem Statement là gì?
+Điều khó nhất đối với tôi và nhóm khi viết Problem Statement chính là **xác định ranh giới (Boundary) và điểm can thiệp của AI**. Do đây là bài toán tuân thủ pháp lý, sự cám dỗ về việc "để AI làm hết từ A đến Z" (như tự động phân tích đúng sai, tự động nộp hồ sơ lên Bộ Công an) rất lớn. Tuy nhiên, nếu không cẩn thận, giải pháp sẽ trở thành viễn vông và vi phạm pháp luật. Nhóm đã phải tranh luận rất nhiều giờ để xác định ranh giới rõ ràng: AI chỉ dừng lại ở vai trò **trợ lý kỹ thuật (Co-pilot)** làm nhiệm vụ trích xuất dữ liệu và soạn thảo bản nháp có dẫn chứng (Citation); quyền kiểm tra, chịu trách nhiệm pháp lý và hành động nộp hồ sơ bắt buộc phải thuộc về con người (Human-in-the-loop). Việc định hình được boundary này giúp bài toán trở nên thực tế, an toàn và khả thi.
 
-**6.5. Điều khó nhất khi viết Problem Statement là gì?**
+### 6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?
+Nếu được làm lại từ đầu, tôi sẽ thúc đẩy việc triển khai khảo sát thực tế (Survey) sớm hơn ngay từ cuối buổi CP2 thay vì đợi đến CP4. Việc có số liệu khảo sát sớm sẽ giúp nhóm không mất thời gian tranh cãi về các giả định chủ quan trong buổi pitch. Ngoài ra, tôi sẽ phản biện nhóm mạnh mẽ hơn ở phần thiết kế kiến trúc bảo mật: Tôi sẽ yêu cầu nhóm đưa ra giải pháp xử lý dữ liệu On-premise hoặc Local LLM ngay từ đầu, vì qua khảo sát, các doanh nghiệp tài chính và fintech cực kỳ e dè việc để dữ liệu hợp đồng và kiến trúc IT của họ đi qua API của các dịch vụ đám mây công cộng bên thứ ba.
 
-**6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
-
-**6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
+### 6.7. Hiểu bài (Chuỗi giá trị toàn diện của bài nhóm)
+1. **Problem**: Cán bộ Pháp chế/DPO tại các doanh nghiệp xử lý dữ liệu lớn mất từ 2–4 tuần công (thậm chí trên 1 tháng theo 64.3% khảo sát) để gom và bóc tách luồng dữ liệu phân tán từ các phòng ban và hàng chục hợp đồng đối tác nhằm lập hồ sơ DPIA theo Nghị định 356/2025/NĐ-CP, đối mặt nguy cơ bị Cục A05 trả hồ sơ và bị phạt tới 5% doanh thu.
+2. **Quy trình**: Nhóm chuyển đổi quy trình thủ công 6 bước phân mảnh sang quy trình bán tự động: Thu thập metadata IT và hợp đồng đối tác → Tiền xử lý lọc bỏ PII thật → AI bóc tách thực thể và điền dự thảo Mẫu 09/10 kèm trích dẫn (Citation) → DPO thẩm định phê duyệt trên giao diện đối soát song song.
+3. **Metric**: Rút ngắn thời gian hoàn thành hồ sơ từ trên 1 tháng xuống dưới 4 ngày công; thời gian bóc tách tài liệu giảm từ 80 giờ xuống dưới 4 giờ; tỷ lệ bao phủ các trường bắt buộc của Mẫu 09 đạt 100% và tỷ lệ thẩm định đạt ngay lần đầu >= 95%.
+4. **Boundary**: Hệ thống tuyệt đối không tiếp nhận dữ liệu khách hàng thật (chỉ nhận metadata và hợp đồng mẫu); AI không được tự ý ký số hay nộp hồ sơ lên Cổng dịch vụ công; mọi thông tin trích xuất đều phải có trích dẫn nguồn văn bản để con người kiểm duyệt.
+5. **Mức can thiệp AI**: Chọn **AI Workflow kết hợp Human-in-the-loop** vì đầu vào có tính phức tạp ngữ nghĩa cao (hợp đồng đa dạng) nhưng đầu ra cố định theo Mẫu 09/10; loại bỏ No AI/Rule vì không xử lý được ngôn ngữ tự nhiên, loại bỏ Agent vì rủi ro pháp lý quá lớn.
+6. **Quyết định**: Quyết định **GO** với quy mô pilot nhỏ nhất trên 01 doanh nghiệp bán lẻ 100–300 nhân sự xử lý 05 hợp đồng dịch vụ phổ biến; thiết lập ngưỡng dừng (Kill criteria) nếu sau 2 tuần tỷ lệ trích xuất chính xác đạt dưới 80% thì dừng để quay về phương án Dynamic Form chuẩn hóa.
 
 ---
 
 ## 7. Tài liệu tham khảo
 
--
+1. **Quốc hội Việt Nam (2025)** — *Luật Bảo vệ dữ liệu cá nhân số 91/2025/QH15* (có hiệu lực từ ngày 01/01/2026).
+2. **Chính phủ Việt Nam (2025)** — *Nghị định số 356/2025/NĐ-CP* quy định chi tiết một số điều và biện pháp thi hành Luật Bảo vệ dữ liệu cá nhân (Mẫu số 09: Đánh giá tác động xử lý dữ liệu cá nhân; Mẫu số 10: Chuyển dữ liệu cá nhân ra nước ngoài).
+3. **EY Việt Nam (2025)** — *Cập nhật Nghị định số 356/2025/NĐ-CP và hướng dẫn tuân thủ cho doanh nghiệp*: https://www.ey.com/vi_vn/technical/tax/tax-and-law-updates/nghi-dinh-so-356-2025-nd-cp-quy-dinh-chi-tiet-mot-so-dieu-va-bien-phap-thi-hanh-luat-bao-ve-du-lieu-ca-nhan
+4. **Báo Đầu tư (2025)** — *Quy định xử phạt vi phạm hành chính trong lĩnh vực bảo vệ dữ liệu cá nhân lên tới 5% doanh thu*: https://baodautu.vn/to-chuc-vi-pham-quy-dinh-chuyen-du-lieu-ca-nhan-xuyen-bien-gioi-bi-phat-5-doanh-thu-d314379.html
+5. **Khảo sát thực nghiệm nhóm 5npc (11/2026)** — *Dữ liệu khảo sát thực tế 14 doanh nghiệp về thực trạng lập hồ sơ đánh giá tác động xử lý dữ liệu cá nhân (DPIA)*: https://docs.google.com/spreadsheets/d/1E7L6IauNfW4oJIxuf23Fx3yLdyOuDakbFlilcYFNe5o/edit?usp=sharing
+6. **Google People + AI Research (PAIR)** — *Human + AI Feedback Loops & Guidelines for Human-AI Interaction*: https://pair.withgoogle.com/chapter/human-ai/
+7. **Teresa Torres (2021)** — *Continuous Discovery Habits: Discover Products that Create Customer Value and Business Value* (Framework Opportunity Solution Tree - OST).
+
