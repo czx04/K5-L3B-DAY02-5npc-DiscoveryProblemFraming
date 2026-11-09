@@ -171,6 +171,8 @@ Kết luận cho từng giả định:
 
 Phạm vi: doanh nghiệp **tự gom thông tin nội bộ** (kể cả khi có tư vấn rà soát), theo actor đã thu hẹp sau CP4. Tổng thời gian lấy từ survey; thời gian từng bước là **giả định R&D** từ Problem Card, survey mới cho biết thứ tự bước tốn thời gian chứ chưa đo từng bước.
 
+**Minh chứng (survey Google Form, 14 người trả lời, ảnh chụp trong `report/assets/`):** câu 4–6 (đã làm chưa, ai làm, tổng thời gian): [image-1.png](../assets/image-1.png); câu 7–8 (bước tốn thời gian nhất, công cụ): [image-2.png](../assets/image-2.png); câu 9–10 (cập nhật, mức khó): [image-3.png](../assets/image-3.png); hồ sơ người trả lời: [image.png](../assets/image.png).
+
 ```mermaid
 flowchart TD
   S1["1. Gửi bảng hỏi, phỏng vấn từng phòng ban<br/>5–8 ngày công"]
@@ -183,21 +185,22 @@ flowchart TD
   S1 --> S2 --> S3 --> S4 --> S5 --> S6
   S6 -- "không đạt" --> S7 --> S1
   classDef bn fill:#ffe0e0,stroke:#c00,stroke-width:2px
+  class S1,S2 bn
 ```
 
 | Bước | Actor | Input | Output | Thời gian / tần suất | Ghi chú |
 |---:|---|---|---|---|---|
-| 1 | DPO/IT gửi; trưởng hoặc nhân viên từng phòng ban trả lời | Bảng hỏi (Google Form/Excel), danh sách phòng ban | Câu trả lời của từng phòng: thu dữ liệu gì, mục đích, lưu ở đâu, chia sẻ cho ai | 5–8 ngày công (giả định) · mỗi lần lập/cập nhật hồ sơ | **Bottleneck.** Survey: 6/9 chọn là bước tốn thời gian nhất. Phải hỏi lại nhiều vòng vì phòng ban trả lời thiếu hoặc sai thuật ngữ |
-| 2 | DPO/pháp chế | Hợp đồng với bên xử lý, bên thứ ba (rải rác ở mua hàng, IT, kinh doanh) | Danh sách bên nhận dữ liệu, loại dữ liệu chia sẻ, có chuyển ra nước ngoài không | 2–3 ngày công (giả định) | **Bottleneck.** Survey: 7/9 chọn, nhiều nhất trong các bước |
-| 3 | DPO/IT | Output bước 1–2 | Sơ đồ luồng dữ liệu (thu → lưu → chia sẻ → xóa) | ~2 ngày công (giả định) | Vẽ tay bằng Excel/Visio/draw.io |
-| 4 | DPO/pháp chế | Output bước 1–3 | Bản nháp hồ sơ theo Mẫu 09 (Mẫu 10 nếu chuyển dữ liệu ra nước ngoài) | ~2 ngày công (giả định) | Survey: 4/9 làm bằng Excel/Word |
-| 5 | Luật sư nội bộ/DPO, hoặc tư vấn bên ngoài | Bản nháp hồ sơ | Hồ sơ đã rà soát, ký | ~2 ngày công (giả định) | Survey: 5/9 cũng chọn bước này là tốn thời gian |
+| 1 | DPO/IT gửi; trưởng hoặc nhân viên từng phòng ban trả lời | Bảng hỏi (Google Form/Excel), danh sách phòng ban | Câu trả lời của từng phòng: thu dữ liệu gì, mục đích, lưu ở đâu, chia sẻ cho ai | 5–8 ngày công (giả định) · mỗi lần lập/cập nhật hồ sơ | **Bottleneck.** Survey câu 7: 10/14 chọn, cao nhất (ngang bước 2). Phải hỏi lại nhiều vòng vì phòng ban trả lời thiếu hoặc sai thuật ngữ |
+| 2 | DPO/pháp chế | Hợp đồng với bên xử lý, bên thứ ba (rải rác ở mua hàng, IT, kinh doanh) | Danh sách bên nhận dữ liệu, loại dữ liệu chia sẻ, có chuyển ra nước ngoài không | 2–3 ngày công (giả định) | **Bottleneck.** Survey câu 7: 10/14 chọn, cao nhất (ngang bước 1) |
+| 3 | DPO/IT | Output bước 1–2 | Sơ đồ luồng dữ liệu (thu → lưu → chia sẻ → xóa) | ~2 ngày công (giả định) | Vẽ tay bằng Excel/Visio/draw.io. Survey câu 7: 8/14 chọn, tốn thời gian thứ ba |
+| 4 | DPO/pháp chế | Output bước 1–3 | Bản nháp hồ sơ theo Mẫu 09 (Mẫu 10 nếu chuyển dữ liệu ra nước ngoài) | ~2 ngày công (giả định) | Survey câu 7: 6/14 chọn là tốn thời gian; câu 8: 7/14 làm bằng Excel/Word |
+| 5 | Luật sư nội bộ/DPO, hoặc tư vấn bên ngoài | Bản nháp hồ sơ | Hồ sơ đã rà soát, ký | ~2 ngày công (giả định) | Survey câu 7: 6/14 cũng chọn bước này là tốn thời gian |
 | 6 | DPO | Hồ sơ đã ký | Hồ sơ nộp Cục A05 | Thời gian chờ kết quả không tính vào ngày công | Nghĩa vụ từ 1/1/2026 |
-| 7 | DPO + phòng ban liên quan | Yêu cầu bổ sung từ A05 | Hồ sơ bổ sung | Trong 30 ngày | Nếu thiếu thông tin luồng dữ liệu thì phải quay lại bước 1 |
+| 7 | DPO + phòng ban liên quan | Yêu cầu bổ sung từ A05 | Hồ sơ bổ sung | Trong 30 ngày | Nếu thiếu thông tin luồng dữ liệu thì phải quay lại bước 1. Survey câu 7: 4/14 chọn bước sửa/bổ sung là tốn thời gian |
 
-**Tổng (survey, 9 người đã làm):** từ 1 tuần đến trên 1 tháng, trung vị khoảng 2 tuần (4/9 mất 1–2 tuần, 4/9 trên 1 tháng). **Tần suất:** lần đầu, sau đó cập nhật định kỳ (7/9 có cập nhật).
+**Tổng (survey câu 6, 13/14 người có câu trả lời):** từ 1–2 tuần đến trên 1 tháng, trung vị rơi vào nhóm **2–4 tuần**: dưới 1 tuần 0/14, 1–2 tuần 4/14, 2–4 tuần 3/14, trên 1 tháng 6/14, không rõ 1/14. Câu 4 cho thấy chỉ 6/14 đã làm xong (5/14 đang làm, 3/14 chưa làm), nên một phần con số là ước tính. **Tần suất (câu 9):** lần đầu, sau đó cập nhật: 11/14 có cập nhật (9/14 định kỳ, 2/14 khi có thay đổi).
 
-**Bottleneck chính:** bước 1–2 gộp lại, tức là **"biết dữ liệu cá nhân đang đi đâu"**: hỏi từng phòng ban và đọc từng hợp đồng bên thứ ba để biết dữ liệu nào được thu, lưu ở đâu, chia sẻ cho ai. Hai bước này chiếm 7–11/13–17 ngày công giả định, và là hai bước được survey chọn nhiều nhất (7/9 và 6/9).
+**Bottleneck chính:** bước 1–2 gộp lại, tức là **"biết dữ liệu cá nhân đang đi đâu"**: hỏi từng phòng ban và đọc từng hợp đồng bên thứ ba để biết dữ liệu nào được thu, lưu ở đâu, chia sẻ cho ai. Hai bước này chiếm 7–11/13–17 ngày công giả định, và là hai bước được survey chọn nhiều nhất (câu 7: cùng 10/14).
 
 ### 4.2. Quy trình tương lai
 
@@ -246,10 +249,10 @@ flowchart TD
 | Chỉ số | Trước | Sau (kỳ vọng) | Ghi chú |
 |---|---:|---:|---|
 | Số bước | 7 | 7 | Không bớt bước; đổi người làm ở bước 1, 3, 5 |
-| Tổng thời gian | 1 tuần đến trên 1 tháng, trung vị ~2 tuần | Dưới 1 tuần | "Trước" lấy từ survey (9 người); "sau" là target, **chưa kiểm chứng**, cần đo khi pilot |
+| Tổng thời gian | 1–2 tuần đến trên 1 tháng, trung vị nhóm 2–4 tuần | Dưới 1 tuần | "Trước" lấy từ survey câu 6 ([image-1.png](../assets/image-1.png)); "sau" là target, **chưa kiểm chứng** (hiện 0/14 đạt), cần đo khi pilot |
 | Số bước thủ công | 7/7 | 4/7 (bước 2, 4, 6, 7) | 2 bước Rule (1, 5), 1 bước AI (3) |
 | Bottleneck chính | Bước 1–2: hỏi phòng ban + đọc hợp đồng bên thứ ba | Dự kiến chuyển sang bước 2 (chờ phòng ban trả lời) và bước 4 (DPO kiểm danh mục) | AI không rút ngắn được thời gian **chờ người**; Rule nhắc hạn chỉ giảm một phần |
-| Rủi ro mới phát sinh | — | (1) AI bỏ sót bên nhận dữ liệu → hồ sơ thiếu mà không ai biết; (2) DPO tin bản nháp, duyệt qua loa; (3) đưa hợp đồng nhạy cảm vào AI; (4) bản nháp kém làm bước rà soát lâu hơn (survey: 5/9 đã thấy rà soát tốn thời gian) | (1) xử lý bằng bảng hỏi Rule ở bước 1 làm nguồn đối chiếu; (2) bằng trích dẫn bắt buộc từng dòng; (3) bằng boundary về công cụ được phê duyệt; (4) bằng ngưỡng quay về |
+| Rủi ro mới phát sinh | — | (1) AI bỏ sót bên nhận dữ liệu → hồ sơ thiếu mà không ai biết; (2) DPO tin bản nháp, duyệt qua loa; (3) đưa hợp đồng nhạy cảm vào AI; (4) bản nháp kém làm bước rà soát lâu hơn (survey câu 7: 6/14 đã thấy rà soát tốn thời gian) | (1) xử lý bằng bảng hỏi Rule ở bước 1 làm nguồn đối chiếu; (2) bằng trích dẫn bắt buộc từng dòng; (3) bằng boundary về công cụ được phê duyệt; (4) bằng ngưỡng quay về |
 
 ---
 
@@ -259,9 +262,9 @@ flowchart TD
 |---|---|
 | **Actor** | DPO hoặc nhân sự IT/pháp chế kiêm nhiệm ở **doanh nghiệp 50–200 người** (chủ yếu công nghệ, fintech), **tự gom thông tin nội bộ** để lập hồ sơ đánh giá tác động xử lý dữ liệu cá nhân, kể cả khi có tư vấn rà soát. Không gồm doanh nghiệp thuê tư vấn làm trọn gói. Thu hẹp từ 50–1.000 người (3.2) vì nhóm 50–200 chiếm 8/14 người trả lời survey, và research cho thấy nền tảng như OneTrust quá nặng với quy mô này |
 | **Quy trình** | 7 bước (xem 4.1): (1) gửi bảng hỏi, phỏng vấn từng phòng ban → (2) gom, đọc hợp đồng bên xử lý/bên thứ ba → (3) vẽ sơ đồ luồng dữ liệu → (4) điền hồ sơ theo Mẫu 09 (+ Mẫu 10) → (5) luật sư/DPO rà soát → (6) nộp Cục A05 → (7) bổ sung trong 30 ngày nếu không đạt. Làm lần đầu, sau đó cập nhật định kỳ |
-| **Bottleneck** | Bước 1–2: **biết dữ liệu cá nhân đang đi đâu**, tức là hỏi từng phòng ban và đọc từng hợp đồng bên thứ ba. Survey: 7/9 chọn bước đọc hợp đồng, 6/9 chọn bước hỏi phòng ban là tốn thời gian nhất. Giả định R&D: 7–11 trên tổng 13–17 ngày công |
-| **Impact** | Mỗi lần lập hồ sơ mất từ 1 tuần đến trên 1 tháng, trung vị khoảng 2 tuần (survey, 9 người đã làm). Việc lặp lại: 7/9 có cập nhật định kỳ. Hồ sơ không đạt phải bổ sung trong 30 ngày, thường phải quay lại bước gom thông tin |
-| **Success Metric** (baseline → target, cách đo) | **Chỉ số:** tổng thời gian lập (hoặc cập nhật) một bộ hồ sơ, tính từ lúc gửi bảng hỏi đến lúc hồ sơ sẵn sàng nộp. **Baseline:** trung vị khoảng 2 tuần (survey, 9 người). **Target:** dưới 1 tuần. **Cách đo:** trong lần pilot, DPO ghi ngày bắt đầu và kết thúc của từng bước vào một sheet log; so tổng thời gian với baseline, và xem thời gian dồn vào bước nào |
+| **Bottleneck** | Bước 1–2: **biết dữ liệu cá nhân đang đi đâu**, tức là hỏi từng phòng ban và đọc từng hợp đồng bên thứ ba. Survey câu 7: bước hỏi phòng ban và bước gom hợp đồng cùng được 10/14 chọn là tốn thời gian nhất ([image-2.png](../assets/image-2.png)). Giả định R&D: 7–11 trên tổng 13–17 ngày công |
+| **Impact** | Mỗi lần lập hồ sơ mất từ 1–2 tuần đến trên 1 tháng, trung vị rơi vào nhóm 2–4 tuần, 6/14 mất trên 1 tháng, không ai dưới 1 tuần (survey câu 6, [image-1.png](../assets/image-1.png)). Việc lặp lại: 11/14 có cập nhật, 9/14 cập nhật định kỳ (câu 9, [image-3.png](../assets/image-3.png)). Hồ sơ không đạt phải bổ sung trong 30 ngày, thường phải quay lại bước gom thông tin |
+| **Success Metric** (baseline → target, cách đo) | **Chỉ số:** tổng thời gian lập (hoặc cập nhật) một bộ hồ sơ, tính từ lúc gửi bảng hỏi đến lúc hồ sơ sẵn sàng nộp. **Baseline:** trung vị rơi vào nhóm 2–4 tuần (survey câu 6, 13/14 người có câu trả lời). **Target:** dưới 1 tuần. **Cách đo:** trong lần pilot, DPO ghi ngày bắt đầu và kết thúc của từng bước vào một sheet log; so tổng thời gian với baseline, và xem thời gian dồn vào bước nào |
 | **Boundary** (AI không được làm gì; khi nào cần con người kiểm tra — HITL) | **AI không được:** nộp hồ sơ hay gửi thông tin ra bên ngoài; kết luận việc xử lý dữ liệu có hợp pháp không hay đánh giá mức rủi ro pháp lý; điền trường nào không có trích dẫn từ tài liệu nguồn; gửi hợp đồng, câu trả lời của phòng ban ra công cụ AI chưa được công ty phê duyệt. **HITL:** DPO duyệt **mọi dòng** danh mục dữ liệu do AI trích trước khi sinh hồ sơ; luật sư/DPO rà soát và ký toàn bộ hồ sơ trước khi nộp |
 
 Phản biện nhận được (từ AI hoặc nhóm khác) và nhóm có đồng ý không:
@@ -270,9 +273,9 @@ Nhóm đưa v0 cho AI (Claude) với yêu cầu đóng vai "PM hoài nghi", ch�
 
 | # | Điểm yếu được chỉ ra | Nhóm đồng ý? | Xử lý |
 |---:|---|---|---|
-| 1 | **Baseline lệch với actor:** trung vị khoảng 2 tuần tính trên 9 người, gồm cả công ty 200–1.000 người, trong khi actor chỉ còn 50–200 người | Đồng ý | Lọc lại dữ liệu survey, chỉ lấy công ty 50–200 người để tính baseline cho v1. Nếu số người quá ít để tính trung vị thì ghi rõ hạn chế này |
+| 1 | **Baseline lệch với actor:** trung vị nhóm 2–4 tuần tính trên 13 người có câu trả lời, gồm cả 5 người ở công ty 200–1.000 người (câu 3, [image.png](../assets/image.png)), trong khi actor chỉ còn 50–200 người | Đồng ý | Lọc lại dữ liệu survey, chỉ lấy công ty 50–200 người để tính baseline cho v1. Nếu số người quá ít để tính trung vị thì ghi rõ hạn chế này |
 | 2 | **Actor có thể không tồn tại:** chỉ doanh nghiệp không được miễn trừ (xử lý dữ liệu nhạy cảm hoặc từ 100.000 chủ thể dữ liệu trở lên) mới phải lập hồ sơ; nhiều công ty 50–200 người có thể được miễn | Đồng ý | Kiểm lại điều kiện miễn trừ trong văn bản luật gốc trước khi viết v1. Nếu phần lớn công ty 50–200 người được miễn, đổi actor ở v1 (ví dụ: chỉ fintech, doanh nghiệp xử lý dữ liệu nhạy cảm) và ghi vào rủi ro Value ở mục 8 |
-| 3 | **Target "dưới 1 tuần" chưa có căn cứ** | Đồng ý | Ở v1, nối target với số thật: 4/9 người đã làm xong trong 1–2 tuần, nên mục tiêu là đưa nhóm chậm về ít nhất mức đó, rồi mới đặt mức dưới 1 tuần |
+| 3 | **Target "dưới 1 tuần" chưa có căn cứ** | Đồng ý | Ở v1, nối target với số thật: 4/14 người đã làm xong trong 1–2 tuần và chưa ai dưới 1 tuần, nên mục tiêu là đưa nhóm chậm về ít nhất mức đó, rồi mới đặt mức dưới 1 tuần |
 | 4 | **Metric chính có thể không thay đổi dù AI làm tốt:** AI chỉ tác động bước 3 của quy trình tương lai, thời gian chờ phòng ban trả lời vẫn còn nguyên (4.3) | Đồng ý | Ở v1, thêm chỉ số phụ: thời gian bước 1–2 (từ lúc gửi bảng hỏi đến lúc có danh mục dữ liệu được DPO duyệt), đo bằng cùng sheet log |
 | 5 | **Boundary có thể chặn bài:** doanh nghiệp 50–200 người thường chưa có công cụ AI nào được phê duyệt, khi đó bước 3 không chạy được | Đồng ý | Giữ nguyên boundary (không nới lỏng vì đây là dữ liệu nhạy cảm). Đưa điểm này vào rủi ro Feasibility và Viability ở mục 8; phương án quay về ở 4.2 vẫn dùng được khi không có AI |
 
