@@ -295,31 +295,38 @@ Vì sao:
 
 | Rủi ro | Câu hỏi | Mức độ rủi ro (Thấp = an toàn / TB / Cao = nguy hiểm) | Lý do / bằng chứng |
 |---|---|---|---|
-| **Value** | Người dùng có thật sự cần và sẽ dùng không? | | |
-| **Usability** | Người dùng có dùng được, có hiểu và sửa được đầu ra của AI không? | | |
-| **Feasibility** | Có đủ dữ liệu, công cụ, kỹ năng để làm không? | | |
-| **Viability** | Có hợp chi phí, pháp lý, quy định tổ chức không? Ai vận hành? | | |
+| **Value** | Người dùng có thật sự cần và sẽ dùng không? | Trung bình | Survey xác nhận nghẽn ở khâu gom thông tin (hợp đồng bên thứ ba 7/9, hỏi phòng ban 6/9) và việc lặp lại (7/9 cập nhật định kỳ). Nhưng 4/9 chỉ mất 1–2 tuần, 3/9 thuê tư vấn trọn gói, mẫu nhỏ và cùng vòng quen biết |
+| **Usability** | Người dùng có dùng được, có hiểu và sửa được đầu ra của AI không? | Trung bình | Phòng ban chỉ cần xác nhận Đúng/Sai/Bổ sung. Chưa có bằng chứng DPO chấp nhận rà bản nháp do máy soạn (giả định #6) |
+| **Feasibility** | Có đủ dữ liệu, công cụ, kỹ năng để làm không? | Trung bình | Phần bảng hỏi + checklist làm được ngay bằng Google Form/Sheet. Phần AI đọc hợp đồng chưa có tài liệu thật để thử (giả định #5) |
+| **Viability** | Có hợp chi phí, pháp lý, quy định tổ chức không? Ai vận hành? | **Cao** | OneTrust và AesirX (theo bài giới thiệu của họ) có thể đã làm được việc này; nhóm chưa kiểm. Chưa biết doanh nghiệp có cho đưa hợp đồng, tài liệu nội bộ vào công cụ AI bên ngoài không |
 
 ### 8.2. Kết luận
 
-**Quyết định:** Go / Not Yet / No-Go
+**Quyết định:** **Not Yet**
 
-**Lý do:**
-
-**Nếu Go — pilot nhỏ nhất:**
+**Lý do:** Viability ở mức Cao nhưng kiểm được nhanh trong 2 tuần. Ba rủi ro còn lại ở mức Trung bình.
 
 **Nếu Not Yet — cần kiểm chứng gì trước:**
 
-**Nếu No-Go — nên làm gì thay AI:**
+- Dùng thử hoặc xin demo OneTrust, AesirX: có xuất được hồ sơ theo mẫu Nghị định 356 không, giá bao nhiêu.
+- Phỏng vấn 2–3 DPO/IT: công ty có cho đưa hợp đồng, tài liệu nội bộ vào công cụ AI không; rà bản nháp có nhanh hơn tự viết không.
 
 **Ngưỡng dừng** (nếu sau … mà … thì quay về …):
+
+- Nếu sau 2 tuần, OneTrust hoặc AesirX đã làm đúng mẫu Nghị định 356 với giá chấp nhận được → No-Go, dùng công cụ có sẵn.
+- Nếu từ 2/3 DPO được hỏi không cho đưa tài liệu vào AI → bỏ bước AI, chỉ làm bảng hỏi chuẩn + checklist.
+- Nếu pilot bảng hỏi chuẩn ở 1 doanh nghiệp không giảm được ít nhất 30% thời gian gom thông tin → quay về cách làm hiện tại.
 
 ---
 
 ## 9. Hạn chế và hướng tiếp theo
 
--
+- 
 
 ## 10. Tài liệu tham khảo
 
--
+- Nghị định 356/2025/NĐ-CP (EY tóm tắt): https://www.ey.com/vi_vn/technical/tax/tax-and-law-updates/nghi-dinh-so-356-2025-nd-cp-quy-dinh-chi-tiet-mot-so-dieu-va-bien-phap-thi-hanh-luat-bao-ve-du-lieu-ca-nhan
+- Mức phạt 5% doanh thu (Báo Đầu tư): https://baodautu.vn/to-chuc-vi-pham-quy-dinh-chuyen-du-lieu-ca-nhan-xuyen-bien-gioi-bi-phat-5-doanh-thu-d314379.html
+- Kiểm kê khí nhà kính, bằng chứng cho candidate #2 (Tuổi Trẻ, 25/6/2026): https://tuoitre.vn/kiem-ke-khi-nha-kinh-co-doanh-nghiep-gui-3-lan-3-bo-so-lieu-khac-nhau-100260625163229417.htm
+- Kết quả survey CP4: [report/assets/cp4-survey-result.md](../assets/cp4-survey-result.md)
+- Link các công cụ và dịch vụ đã có: xem bảng 3.3.
