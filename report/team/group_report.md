@@ -20,19 +20,29 @@
 |---:|---|---|---|---|---|
 | 1 | Hoàng Minh Quyền | Khi phải lập hồ sơ đánh giá tác động dữ liệu cá nhân theo luật mới, tôi muốn biết mọi phòng ban thu dữ liệu gì, lưu đâu, chia sẻ cho ai, để nộp đạt ngay lần đầu | Pháp chế / DPO doanh nghiệp lớn (bán lẻ, bảo hiểm, fintech, bệnh viện) | Hỏi và gom thông tin từ các phòng ban: 7–11 ngày công | Doanh nghiệp tự làm hay thuê trọn gói tư vấn? AI hiểu sai luật thì ai chịu? () |
 | 2 | Hoàng Minh Quyền | Khi tới kỳ kiểm kê khí nhà kính / báo cáo CBAM, tôi muốn có đủ số liệu điện, nhiên liệu cả năm, để báo cáo đúng, không nộp lại | Cán bộ ESG nhà máy, DN xuất khẩu sang EU | Xin và nhập tay số liệu từ kế toán, kho, kỹ thuật: 2–4 tuần | FPT VertZéro và nền tảng khác đã làm chưa? () |
-| 3 | Ngô Minh Cương | Khi bàn giao ca trực, tôi muốn nắm nhanh sự cố chưa đóng, để ca sau không sót việc | Kỹ sư on-call | Viết tóm tắt bàn giao: 10–15'/ca, hay sót thread Slack | Checklist bắt buộc đã đủ chưa? PagerDuty/incident.io có sẵn tính năng chưa? () |
-| 4 | Ngô Minh Cương | Khi bị khách khiếu nại thiếu hàng trên sàn, tôi muốn tìm nhanh video đóng gói của đơn đó, để nộp bằng chứng trong 24h | Chủ shop, trưởng ca kho TMĐT | Tua camera tìm đúng lúc đóng đơn: 8–12'/đơn | Quét mã vạch + camera (Rule) đã giải được chưa? () |
-| 5 | Đoàn Trí Hùng | Khi nhận task mới, tôi muốn hiểu rõ yêu cầu nghiệp vụ và phạm vi code cần sửa, để làm đúng ngay từ đầu | Developer dự án Nhật, leader | Đối chiếu BD/DD với source code: 10–20', gây hỏi lại leader | Tài liệu không được đưa ra AI ngoài, checklist đã đủ chưa? () |
-| 6 | Dư Văn Hùng | Mỗi tuần, tôi muốn biết game nào trong portfolio bị review xấu tăng đột biến và vì sao, để xử lý trước khi rating tụt | Team ASO, Product/LiveOps nhà phát hành 100+ game | Đọc, dịch, phân loại review đa ngôn ngữ: 15–20'/game/tuần | AppFollow, AppTweak đã giải chưa? () |
-| 7 | Trần Quang Hà | Khi tự luyện IELTS Speaking/Writing, tôi muốn nhận ra lỗi diễn đạt lặp lại, để sửa dứt điểm trước khi thi | Người ôn thi IELTS | Tự tra và rà lỗi: 2–3 giờ/lần | ChatGPT / app chấm IELTS có sẵn đã đủ chưa? Ai trả tiền? () |
+| 3 | Hoàng Minh Quyền | Khi nhận hồ sơ mời thầu mới, tôi muốn có ngay danh sách yêu cầu năng lực, giấy tờ kèm tài liệu mình đã có, để không bị loại vì thiếu hồ sơ | Chuyên viên đấu thầu công ty CNTT, thiết bị y tế, xây lắp | Đọc hồ sơ mời thầu + tìm tài liệu năng lực trong kho: 6–8 giờ/gói | Tỉ lệ bị loại vì thiếu hồ sơ có thật sự cao không? () |
+| 4 | Ngô Minh Cương | Khi bàn giao ca trực, tôi muốn nắm nhanh sự cố chưa đóng, để ca sau không sót việc | Kỹ sư on-call, Incident Manager | Viết tóm tắt bàn giao: 10–15'/ca, hay sót thread Slack | Checklist bắt buộc đã đủ chưa? PagerDuty/incident.io có sẵn tính năng chưa? () |
+| 5 | Ngô Minh Cương | Khi nhận bài nộp lab của 80 sinh viên, tôi muốn phát hiện ngay bài sai cấu trúc, thiếu file, link demo hỏng, để nhắc sửa trước hạn chấm | Trợ giảng (TA), giảng viên | Mở từng folder kiểm tra tay: 60–75'/80 bài | Script Python/Bash (Rule) đã giải được 90% chưa, cần gì AI? () |
+| 6 | Ngô Minh Cương | Khi bị khách khiếu nại thiếu hàng trên sàn, tôi muốn tìm nhanh video đóng gói của đơn đó, để nộp bằng chứng trong 24h | Chủ shop, trưởng ca kho TMĐT | Tua camera tìm đúng lúc đóng đơn: 8–12'/đơn | Quét mã vạch + camera (Rule) đã giải được chưa? () |
+| 7 | Đoàn Trí Hùng | Khi nhận task mới, tôi muốn hiểu rõ yêu cầu nghiệp vụ và phạm vi code cần sửa, để làm đúng ngay từ đầu | Developer dự án Nhật, leader | Đối chiếu BD/DD với source code: 10–20', gây hỏi lại leader | Tài liệu không được đưa ra AI ngoài, checklist đã đủ chưa? () |
+| 8 | Đoàn Trí Hùng | Khi bắt đầu học một chủ đề ML mới, tôi muốn đi được từ toán, lý thuyết đến code ví dụ, để hiểu và áp dụng nhanh | Học viên mới học ML (chương trình AI VinUni) | Nối lý thuyết với code thực tế: 60–120'/chủ đề | Người học khác có cùng khó khăn không? Khó nhất ở chủ đề nào? () |
+| 9 | Đoàn Trí Hùng | Khi gặp lỗi trong ứng dụng Intra-mart, tôi muốn nhanh chóng xác định nguyên nhân và hướng xử lý, để không mất quá nhiều thời gian debug | Developer Java/Intra-mart mới làm quen framework | Đọc source framework/dự án tìm module lỗi: 30–60'/lỗi | Ngoài hệ sinh thái Intra-mart có ai gặp không? Đã đo thời gian debug thật chưa? () |
+| 10 | Dư Văn Hùng | Mỗi tuần, tôi muốn biết game nào trong portfolio bị review xấu tăng đột biến và vì sao, để xử lý trước khi rating tụt | Team ASO; Product/LiveOps nhận kết quả (nhà phát hành 100+ game) | Đọc, dịch, phân loại review đa ngôn ngữ: 15–20'/game/tuần | AppFollow, AppTweak đã giải chưa? () |
+| 11 | Dư Văn Hùng | Khi nhận bug report từ người chơi, tôi muốn có đủ bước tái hiện, để dev sửa mà không phải hỏi lại | QA / dev team game indie | Hỏi lại và chờ trả lời: ~10' + chờ vài giờ đến 1 ngày/bug | Form/template bắt buộc có đủ không, cần gì AI? () |
+| 12 | Dư Văn Hùng | Khi người chơi hỏi trên Discord, tôi muốn trả lời nhanh các câu lặp lại, để mod không trả lời mãi một câu | Mod Discord (tình nguyện viên), người chơi mới | Chờ mod thấy tin: 30'–vài giờ khi mod offline | Discord AutoMod / bot FAQ có sẵn đã giải chưa? () |
+| 13 | Trần Quang Hà | Khi tự luyện IELTS Speaking/Writing, tôi muốn nhận ra lỗi diễn đạt lặp lại, để sửa dứt điểm trước khi thi | Người ôn thi IELTS | Tự tra và rà lỗi: 2–3 giờ/lần | ChatGPT / app chấm IELTS có sẵn đã đủ chưa? Ai trả tiền? () |
+| 14 | Trần Quang Hà | Khi chuẩn bị bài dạy tiếng Anh cuối tuần cho 2 em nhỏ, tôi muốn có sẵn khung từ vựng và câu hỏi game, để không mất công soạn lại mà các bé không chán | Gia sư, học sinh lớp 2–3 | Tự soạn game trên Baamboozle: 1–2 giờ/tuần | Có kho game/bộ đề mẫu sẵn chưa? Actor chỉ 1 người thì impact bao nhiêu? () |
+| 15 | Trần Quang Hà | Khi nghiên cứu công nghệ backend mới (Kafka KRaft, Microservices), tôi muốn nắm ngay kiến trúc cốt lõi, để bắt tay vào code thay vì chìm trong tài liệu dài | Backend developer | Đọc tài liệu, sách: 2–3 giờ/công nghệ, có lần 3 ngày | Khác gì đọc quick-start / hỏi ChatGPT? Đo "đã nắm kiến trúc" bằng gì? () |
+
 
 ### 2.2. Cluster
 
 | Cluster | Các candidate | Pattern chung |
 |---|---|---|
-| A. Hồ sơ tuân thủ bắt buộc | #1 Hồ sơ dữ liệu cá nhân, #2 Kiểm kê khí nhà kính / CBAM | Luật ép phải làm, sai thì bị phạt hoặc nộp lại; nghẽn ở bước đi gom thông tin từ nhiều phòng ban |
-| B. Tổng hợp thông tin rải rác để chuyển giao | #3 Bàn giao ca trực, #5 Phân tích yêu cầu nghiệp vụ, #6 ReviewRadar | Thông tin nằm ở nhiều nguồn (Slack, Jira, tài liệu, review); người làm phải đọc và tóm tắt cho người sau |
-| C. Tìm bằng chứng / lỗi trong khối dữ liệu lớn | #4 Video đóng gói TMĐT, #7 Lỗi luyện IELTS | Phải dò tay trong nhiều dữ liệu (video, bài viết) để tìm đúng chỗ cần |
+| A. Hồ sơ tuân thủ / thủ tục bắt buộc | #1 Hồ sơ dữ liệu cá nhân, #2 Kiểm kê khí nhà kính / CBAM, #3 Hồ sơ dự thầu | Quy định hoặc bên mời thầu ép phải nộp đủ; sai thì bị phạt, nộp lại hoặc bị loại. Nghẽn ở bước đi gom thông tin/tài liệu từ nhiều phòng ban |
+| B. Tổng hợp thông tin rải rác để chuyển giao | #4 Bàn giao ca trực, #7 Phân tích yêu cầu nghiệp vụ, #10 ReviewRadar, #11 Bug report thiếu bước tái hiện | Thông tin nằm ở nhiều nguồn (Slack, Jira, tài liệu, review, tin nhắn người chơi); người làm phải đọc, tóm tắt hoặc hỏi lại cho người sau |
+| C. Dò tìm bằng chứng / lỗi trong khối dữ liệu lớn | #5 Kiểm tra bài nộp lab, #6 Video đóng gói TMĐT, #9 Debug Intra-mart | Phải dò tay trong nhiều dữ liệu (folder bài nộp, video, log + source code) để tìm đúng chỗ sai |
+| D. Học / truyền đạt kiến thức lặp lại | #8 Học ML, #12 Câu hỏi lặp trên Discord, #13 Lỗi luyện IELTS, #14 Soạn bài dạy tiếng Anh, #15 Nghiên cứu công nghệ backend | Actor chủ yếu là cá nhân; pain là thời gian tự tra cứu, soạn hoặc trả lời lại cùng một kiến thức |
 
 ### 2.3. Opportunity Solution Tree rút gọn
 
@@ -69,16 +79,8 @@ Những ý đã gạch bỏ vì là solution đội lốt opportunity:
 | Candidate | Actor rõ | Quy trình rõ | Pain có bằng chứng | Impact đo được | Vừa sức lab | So sánh được No AI/Rule/Workflow/Agent | Nhóm hiểu domain | Tổng |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | #1 Hồ sơ đánh giá tác động dữ liệu cá nhân | 5 | 5 | 3 | 5 | 3 | 5 | 2 | **28** |
-| #6 ReviewRadar (review xấu tăng đột biến) | 4 | 4 | 3 | 3 | 5 | 3 | 4 | 26 |
+| #10 ReviewRadar (review xấu tăng đột biến) | 4 | 4 | 3 | 3 | 5 | 3 | 4 | 26 |
 | #2 Kiểm kê khí nhà kính / CBAM | 4 | 4 | 4 | 4 | 3 | 4 | 2 | 25 |
-
-Shortlist lấy đại diện mạnh nhất của cluster A (#1, #2) và cluster B (#6). Cluster C bị loại sớm: #4 đã có giải pháp quét mã vạch + camera; #7 actor là cá nhân, khó trả lời câu "ai trả tiền".
-
-Giải thích điểm:
-
-- **#1:** Actor rõ (DPO ở doanh nghiệp không được miễn trừ). Quy trình đã có khung pháp lý cố định (Mẫu 09/10, nộp A05, bổ sung trong 30 ngày). Impact đo được bằng ngày công và kết quả đạt/không đạt. Có đủ 4 mức để so sánh: template/checklist (No AI) → Rule → Workflow → Agent. **Pain chỉ 3** vì 2–4 tuần công vẫn là giả định R&D. **Domain chỉ 2** vì cả nhóm chưa ai làm pháp chế.
-- **#6:** Vừa sức lab nhất (review công khai, lấy được ngay) và Dư Văn Hùng hiểu domain. Nhưng AppFollow/AppTweak đã có gắn tag và phân tích cảm xúc review, nên khoảng trống còn lại hẹp. Impact (15–20'/game/tuần) nhỏ hơn #1.
-- **#2:** Có bằng chứng pain mạnh nhất (Tuổi Trẻ 25/6/2026: có doanh nghiệp gửi 3 lần, 3 bộ số liệu khác nhau). Nhưng dữ liệu nằm trong hóa đơn và phiếu kho nội bộ, khó có mẫu thật trong lab. Đã có FPT IS VertZéro và các nền tảng khác.
 
 **Candidate được chọn:** #1, hồ sơ đánh giá tác động xử lý dữ liệu cá nhân.
 
@@ -86,11 +88,12 @@ Giải thích điểm:
 
 **Vì sao loại các candidate còn lại:**
 
-- #6: điểm khá nhưng công cụ thương mại đã giải phần lớn; nếu làm dễ thành "làm lại AppFollow". Ghi vào hướng tiếp theo.
+- #10: điểm khá nhưng công cụ thương mại đã giải phần lớn; nếu làm dễ thành "làm lại AppFollow". Ghi vào hướng tiếp theo.
 - #2: pain thật nhưng không lấy được dữ liệu mẫu trong lab, và đã có nền tảng trong nước làm.
-- #3, #5: #3 trùng tính năng PagerDuty/incident.io; #5 vướng quy định không đưa tài liệu khách hàng Nhật ra AI ngoài.
+- #3: cùng cluster A với #1 nhưng chưa có bằng chứng tỉ lệ bị loại vì thiếu hồ sơ.
+- #4, #7, #11: #4 trùng tính năng PagerDuty/incident.io; #7 vướng quy định không đưa tài liệu khách hàng Nhật ra AI ngoài; #11 form/template bắt buộc có thể đã đủ.
 
-**Xử lý bất đồng (nếu có):** *(nhóm điền: ai muốn chọn candidate khác, lý do, nhóm chốt thế nào)*
+**Xử lý bất đồng (nếu có):**
 
 ---
 
@@ -104,35 +107,27 @@ Giải thích điểm:
 | 2 | Doanh nghiệp tự làm, hoặc ít nhất tự gom thông tin nội bộ, chứ không giao trọn gói cho công ty tư vấn | Viability | 5 | 1 | **Có** |
 | 3 | Hồ sơ phải cập nhật định kỳ, nên đây là việc lặp lại chứ không phải làm một lần rồi thôi | Value | 4 | 3 (Nghị định 356) | **Có** |
 | 4 | Công cụ đang dùng chủ yếu là Excel/Word và bảng hỏi gửi phòng ban; chưa có phần mềm làm theo mẫu Việt Nam | Value | 4 | 2 | **Có** |
-| 5 | Có thể lấy được nguồn đầu vào (hợp đồng, chính sách quyền riêng tư, danh sách hệ thống) để thử trong lab mà không lộ dữ liệu thật | Feasibility | 4 | 1 | Chưa, để CP5–6 |
-| 6 | DPO/luật sư chấp nhận rà soát bản nháp do máy soạn thay vì tự viết từ đầu | Usability | 4 | 1 | Chưa, để CP6 |
+| 5 | Có thể lấy được nguồn đầu vào (hợp đồng, chính sách quyền riêng tư, danh sách hệ thống) để thử trong lab mà không lộ dữ liệu thật | Feasibility | 4 | 1 |  |
+| 6 | DPO/luật sư chấp nhận rà soát bản nháp do máy soạn thay vì tự viết từ đầu | Usability | 4 | 1 | |
 
 Giả định nhóm kiểm chứng trong buổi này: **#1, #2, #3, #4**, bằng micro survey.
 
 ### 3.2. Kiểm chứng
 
-Cách đã dùng: **Survey** (Google Form, 10 câu, ẩn danh). Kết quả tổng hợp: [report/assets/cp4-survey-result.md](../assets/cp4-survey-result.md).
+Cách đã dùng: **Survey** (Google Form, 10 câu, ẩn danh). 
 
-- **Mẫu:** 14 phản hồi, gồm 6 DPO/Compliance, 6 IT/An toàn thông tin, 2 HR.
-  - Lĩnh vực: 7 công nghệ/phần mềm, 6 ngân hàng/tài chính/fintech, 1 vận tải.
-  - Quy mô: 8 công ty 50–200 người, 5 công ty 200–1.000 người.
-- **Nhóm "đã thực sự làm":** 9/14 người vừa trả lời đã làm xong hoặc đang làm, vừa không chọn "chưa làm lần nào". Các số về thời gian và cách làm bên dưới tính trên 9 người này.
-- **Lưu ý chất lượng dữ liệu:**
-  - Cả 14 phản hồi đến trong 26 phút, nhiều khả năng từ cùng một vòng quen biết, nên mẫu không đại diện cho thị trường.
-  - Câu 7 ghi "chọn tối đa 2" nhưng form không chặn; 11/13 người chọn từ 3 bước trở lên, nên chỉ đọc được thứ tự tương đối.
-  - Có 2 phản hồi mâu thuẫn: "chưa làm" nhưng vẫn ghi thời gian.
-  - 6 người chọn "phần mềm chuyên dụng" nhưng không ai ghi tên phần mềm.
+Interview snapshot (mỗi buổi phỏng vấn một bảng, hoặc đặt file trong report/assets/cp4-interview-snapshot-N.md):
 
 Tổng hợp:
 
 | Nguồn | Số người / số mẫu | Tín hiệu xác nhận | Tín hiệu phản bác |
 |---|---:|---|---|
-| Survey: thời gian (câu 6) | 9 | 5/9 mất từ 2 tuần trở lên, trong đó 4/9 mất trên 1 tháng | **4/9 chỉ mất 1–2 tuần**, ít hơn mức 2–4 tuần nhóm giả định |
-| Survey: bước tốn thời gian nhất (câu 7) | 9 | Gom hợp đồng bên thứ ba 7/9, hỏi phòng ban 6/9; khớp đúng bottleneck bước 1–2 | Luật sư/DPO rà soát cũng được chọn 5/9, nên bottleneck không chỉ nằm ở khâu gom |
-| Survey: ai làm (câu 5) | 9 | 4/9 tự làm nội bộ, 2/9 nội bộ gom rồi tư vấn rà soát → 6/9 vẫn phải tự gom thông tin | **3/9 thuê tư vấn làm trọn gói**. Với nhóm này, phần mềm cho DPO không có chỗ đứng |
-| Survey: công cụ (câu 8) | 9 | Google Form/bảng hỏi 6/9, Excel/Word 4/9: làm thủ công là chủ yếu | 4/9 nói đã dùng "phần mềm chuyên dụng" nhưng không ghi tên, cần hỏi lại |
-| Survey: cập nhật (câu 9) | 9 | 7/9 cập nhật định kỳ → việc lặp lại, khớp Nghị định 356 | 1 người chưa cập nhật lần nào, 1 người không rõ |
-| Survey: mức khó (câu 10, thang 1–5) | 9 | 8/9 chấm 4, 1/9 chấm 5 | Không ai chấm 5 ngoài 1 người; khó nhưng chưa phải "cực kỳ đau" |
+| Survey: thời gian | 9 | 5/9 mất từ 2 tuần trở lên, trong đó 4/9 mất trên 1 tháng | **4/9 chỉ mất 1–2 tuần**, ít hơn mức 2–4 tuần nhóm giả định |
+| Survey: bước tốn thời gian nhất | 9 | Gom hợp đồng bên thứ ba 7/9, hỏi phòng ban 6/9; khớp đúng bottleneck bước 1–2 | Luật sư/DPO rà soát cũng được chọn 5/9, nên bottleneck không chỉ nằm ở khâu gom |
+| Survey: ai làm | 9 | 4/9 tự làm nội bộ, 2/9 nội bộ gom rồi tư vấn rà soát → 6/9 vẫn phải tự gom thông tin | **3/9 thuê tư vấn làm trọn gói**. Với nhóm này, phần mềm cho DPO không có chỗ đứng |
+| Survey: công cụ | 9 | Google Form/bảng hỏi 6/9, Excel/Word 4/9: làm thủ công là chủ yếu | 4/9 nói đã dùng "phần mềm chuyên dụng" nhưng không ghi tên, cần hỏi lại |
+| Survey: cập nhật | 9 | 7/9 cập nhật định kỳ → việc lặp lại, khớp Nghị định 356 | 1 người chưa cập nhật lần nào, 1 người không rõ |
+| Survey: mức khó | 9 | 8/9 chấm 4, 1/9 chấm 5 | Không ai chấm 5 ngoài 1 người; khó nhưng chưa phải "cực kỳ đau" |
 
 Kết luận cho từng giả định:
 
