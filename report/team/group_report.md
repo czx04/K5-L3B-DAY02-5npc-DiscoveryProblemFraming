@@ -356,29 +356,37 @@ Thấp│
 
 | Trường | Nội dung |
 |---|---|
-| **Actor** | |
-| **Quy trình** | |
-| **Bottleneck** | |
-| **Impact** | |
-| **Success Metric** (baseline → target, cách đo) | |
-| **Boundary** | |
-| **AI intervention point** | |
-| **Mức chọn** | No AI / Rule / Workflow / Agent |
-| **Rủi ro & người kiểm tra** | |
+| **Actor** | DPO hoặc nhân sự IT/pháp chế kiêm nhiệm ở **doanh nghiệp 50–200 người thuộc diện không được miễn trừ** (công nghệ, fintech/tài chính có xử lý dữ liệu nhạy cảm hoặc ≥ 100.000 chủ thể dữ liệu), **tự gom thông tin nội bộ** (kể cả khi thuê tư vấn rà soát bước cuối). Loại nhóm thuê tư vấn trọn gói và DN thuộc diện miễn trừ theo Luật 91/2025/QH15 *(cần kiểm lại điều kiện miễn trừ ở mục 8.2)* |
+| **Quy trình** | 7 bước theo thiết kế 4.2: (1) Rule gửi bảng hỏi chuẩn → (2) Phòng ban trả lời, nộp hợp đồng & schema → (3) **AI Workflow** trích xuất danh mục kèm Citation nguồn & Review Flag → (4) **DPO duyệt từng dòng (HITL 1)** hoặc quay về Excel tay → (5) Rule sinh sơ đồ luồng & điền nháp **Mẫu số 10 (+ Mẫu số 09 nếu chuyển dữ liệu ra nước ngoài)** theo Điều 18–19 NĐ 356/2025 → (6) **Luật sư/DPO rà soát pháp lý, ký (HITL 2)** → (7) DPO nộp Bộ Công an (Cục A05). Cập nhật định kỳ 6 tháng |
+| **Bottleneck** | Hiện tại là bước 1–2 (**10/14** survey chọn hỏi phòng ban & đọc hợp đồng bên thứ ba; giả định 7–11/13–17 ngày công). Ở quy trình tương lai, điểm nghẽn dịch sang **thời gian chờ phòng ban trả lời** và **khâu DPO kiểm duyệt/rà soát (6/14 đã thấy tốn thời gian)** |
+| **Impact** | Survey 14 người: 0/14 dưới 1 tuần, 4/14 mất 1–2 tuần, 3/14 mất 2–4 tuần, 6/14 trên 1 tháng (1/14 không rõ); 10/14 chấm khó 4–5/5; 11/14 cập nhật (9/14 định kỳ). Hồ sơ không đạt phải bổ sung trong 30 ngày; vi phạm có thể bị phạt tới **5% doanh thu** |
+| **Success Metric** (baseline → target, cách đo) | **Chính:** Tổng thời gian lập/cập nhật 1 bộ hồ sơ (từ lúc gửi bảng hỏi đến lúc sẵn sàng nộp). *Baseline:* chung toàn survey ở mức **2–4 tuần** (trung vị 13/14 người có câu trả lời; *hạn chế: ảnh tổng hợp chưa tách riêng được median cho 8/14 DN 50–200 người, nên khi pilot sẽ đo baseline thực tế của chính DN tham gia*). *Target:* **Nấc 1 (pilot):** giảm **≥ 30% thời gian gom thông tin** hoặc đưa nhóm chậm về **`1–2 tuần`** (ngang `4/14` nhanh nhất); **Nấc 2 (ổn định):** **`< 1 tuần`** (kỳ vọng `≤ 4 ngày làm việc` ở mục 6.3).<br>**Phụ:** Thời gian gom & chốt danh mục (từ gửi bảng hỏi bước 1 đến khi DPO duyệt xong tại bước 4 ở 4.2, ứng với bước 1–2 ở 4.1), tách riêng *thời gian chờ phòng ban* và *giờ công xử lý bước 3–4*.<br>**Guardrail:** DPO phải sửa **≤ 50% dòng** tại HITL 1, **0** lỗi bỏ sót bên thứ ba/dữ liệu nhạy cảm không có citation, và thời gian rà soát không vượt baseline làm tay.<br>**Cách đo:** DPO ghi ngày bắt đầu/kết thúc từng bước, tách giờ xử lý bước 3–4 và đếm số dòng giữ/sửa/xóa trên cùng một sheet log |
+| **Boundary** | **AI không được:** nộp hồ sơ hay gửi thông tin ra bên ngoài; kết luận hợp pháp hay đánh giá rủi ro pháp lý; điền trường không có trích dẫn nguồn; chạy trên AI công cộng — chỉ dùng LLM enterprise (không lưu dữ liệu) hoặc mô hình nội bộ trên tài liệu đã che PII (chưa đủ điều kiện thì hạ về Rule + Excel). **HITL:** DPO duyệt 100% dòng danh mục (bước 4); luật sư/DPO rà soát pháp lý và ký trước khi nộp (bước 6) |
+| **AI intervention point** | Chỉ tại **Bước 3** của quy trình tương lai (`4.2`) — sau bảng hỏi Rule & tài liệu phòng ban nộp (bước 1–2), trước cổng HITL 1 (bước 4). Bước 1 và bước 5 vẫn dùng **Rule** |
+| **Mức chọn** | **Workflow** *(Rule tiền xử lý/che PII & bảng hỏi chuẩn → AI trích xuất kèm Citation & Review Flag → DPO HITL 1 → Rule sinh sơ đồ & Mẫu 10/09 → Luật sư/DPO HITL 2)* |
+| **Rủi ro & người kiểm tra** | • **Bảo mật đầu vào (Viability Cao):** IT/ATTTTT & DPO duyệt hạ tầng AI trước khi dùng; không đạt thì hạ về Rule + Excel.<br>• **AI bỏ sót bên thứ ba / dữ liệu nhạy cảm:** ưu tiên High Recall + Review Flag (60–85%) + đối chiếu bảng hỏi Rule → **DPO duyệt từng dòng (HITL 1)**.<br>• **AI bịa / bản nháp kém làm chậm khâu rà soát:** bắt buộc Citation song song + quay về Excel nếu phải sửa `> 50%` dòng → **DPO (HITL 1) & Luật sư/DPO (HITL 2)** |
 
 **Thay đổi so với v0 và lý do:**
 
 | Trường | v0 | v1 | Vì sao đổi |
 |---|---|---|---|
-| | | | |
+| **Actor** | Doanh nghiệp 50–200 người tự gom thông tin nội bộ | Thu hẹp còn DN 50–200 người **thuộc diện không được miễn trừ** (xử lý dữ liệu nhạy cảm hoặc ≥ 100.000 chủ thể) | Xử lý phản biện #2 (mục 5): chỉ DN không được miễn trừ mới bắt buộc lập hồ sơ theo Luật 91/2025 |
+| **Quy trình** | Ghi điền *"Mẫu 09 (+ Mẫu 10 nếu chuyển ra nước ngoài)"* | Đổi thành *"Mẫu số 10 (+ Mẫu số 09 nếu chuyển dữ liệu ra nước ngoài)"* kèm luồng Workflow/HITL | Đối chiếu Nghị định 356/2025 (mục 10 & nhánh cá nhân `12dc8ca`): Điều 19 là Mẫu số 10 (đánh giá tác động), Điều 18 là Mẫu số 09 (chuyển ra nước ngoài) |
+| **Success Metric** | Chỉ đo tổng thời gian; baseline chung 2–4 tuần (13/14 trả lời); target chung `< 1 tuần` | Nêu hạn chế chưa lọc riêng 50–200 người; chia target 2 nấc (`≥ 30%` / `1–2 tuần` → `< 1 tuần`); thêm **chỉ số phụ bước 1–4** (tách chờ phòng ban) và **guardrail `≤ 50%` dòng sửa, `0` bỏ sót** | Xử lý phản biện #1, #3, #4 (mục 5): bám thực tế `4/14` đạt 1–2 tuần, tách thời gian chờ người và khớp ngưỡng dừng mục 8.2 + mục 6.3/6.4 |
+| **Boundary** | Cấm AI chưa phê duyệt, thiếu citation, kết luận pháp lý | Giữ nguyên cấm AI công cộng; bổ sung điều kiện LLM enterprise/on-premise che PII và cơ chế hạ về Rule/Excel | Xử lý phản biện #5 (mục 5) & rủi ro Viability Cao (mục 8.1) |
+| *(Mới ở v1)* **3 trường AI** | Chưa có | Chốt **Bước 3**, **Workflow**, và phân công IT/DPO/luật sư kiểm rủi ro | Nối phân tích ở mục 4.2 & mục 6 sang mục 8 và bộ tiêu chí đánh giá |
 
 **Tiêu chí đánh giá đầu ra của AI (3–5 tiêu chí):**
 
+*(Chấm đầu ra Bước 3 AI Workflow — bảng danh mục dữ liệu nháp & mapping Mẫu số 10/09 — trên bộ tài liệu ẩn danh thử nghiệm):*
+
 | # | Tiêu chí | Đạt khi | Không đạt khi |
 |---:|---|---|---|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
+| 1 | **Không bỏ sót thực thể trọng yếu (High Recall)** | Trích xuất đúng **100%** dữ liệu nhạy cảm và **100%** bên thứ ba / trường hợp chuyển nước ngoài có trong tài liệu mẫu | Bỏ sót **≥ 1** loại dữ liệu nhạy cảm hoặc **≥ 1** bên thứ ba / luồng chuyển nước ngoài có trong input |
+| 2 | **Có trích dẫn nguồn khớp gốc (No Hallucination)** | **100% dòng** kèm đúng tên file + điều/đoạn nguồn khớp nội dung văn bản gốc | Có **≥ 1 dòng** tự suy diễn không có trong input hoặc trích dẫn sai vị trí |
+| 3 | **Gắn cờ chỗ mập mờ / mâu thuẫn (Review Flag)** | Mọi trường thiếu bằng chứng, tin cậy 60%–85%, hoặc mâu thuẫn giữa bảng hỏi với hợp đồng đều được gắn **Review Flag** kèm câu hỏi kiểm tra | AI tự khẳng định và điền trơn vào mẫu khi thông tin đang thiếu hoặc mâu thuẫn |
+| 4 | **Đúng Boundary pháp lý** | Chỉ tổng hợp sự kiện và điền nháp trường Mẫu số 10/09 chờ HITL duyệt | Xuất hiện câu kết luận *"hợp pháp / đủ điều kiện nộp"* hoặc tự đánh giá mức rủi ro pháp lý |
+| 5 | **Khả dụng khi DPO rà soát (HITL 1)** | Tỷ lệ dòng DPO phải sửa/nhập lại **≤ 50%**, thời gian rà không chậm hơn đọc tay làm Excel | Phải sửa **> 50% số dòng** hoặc rà lâu hơn quy trình đọc tay điền Excel *(kích hoạt ngưỡng dừng mục 8.2)* |
 
 ---
 
