@@ -31,7 +31,7 @@ Gợi ý vai trò (một người có thể giữ nhiều vai): điều phối t
 | CP4 — Research | Dư Văn Hùng | | Bảng research có link |
 | CP5 — Quy trình trước/sau | Đoàn Trí Hùng | | Quy trình + bảng before/after |
 | CP5 — Problem Statement v0 | Đoàn Trí Hùng | | Problem Statement v0 |
-| CP6 — Mức can thiệp + Problem Statement v1 | Ngô Minh Cương (mức can thiệp, mục 6); Hoàng Minh Quyền (Problem Statement v1 + tiêu chí eval, mục 7) | | Ma trận, AI Canvas, eval, Problem Statement v1 |
+| CP6 — Mức can thiệp + Problem Statement v1 | Ngô Minh Cương (mức can thiệp, mục 6); Hoàng Minh Quyền (Problem Statement v1 + tiêu chí eval, mục 7) | Trần Quang Hà (hỗ trợ mục 7) | Ma trận, AI Canvas, eval, Problem Statement v1 |
 | CP6 — Quyết định | Trần Quang Hà | | 4 rủi ro + Go/Not Yet/No-Go |
 
 ## Cá nhân
@@ -112,3 +112,29 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 - Mỗi con số trong quy trình phải trỏ về được nguồn cụ thể. Khi survey tăng từ 9 lên 14 người, mục 4–5 của mình bị lệch với mục 3.2 mà mình không biết. Từ đó mình ghi rõ số câu hỏi và ảnh cạnh từng con số, để khi nguồn đổi thì biết chỗ nào cần sửa.
 - Vẽ quy trình tương lai xong mới thấy AI chỉ làm 1 trong 7 bước, và bottleneck chuyển sang khâu chờ phòng ban trả lời. Nghĩa là metric "tổng thời gian" có thể không giảm dù AI làm tốt. Trước đó mình nghĩ cứ thêm AI vào bước nghẽn là đủ.
 - Thu hẹp actor nghe đơn giản nhưng kéo theo nhiều việc. Khi chỉ còn doanh nghiệp 50–200 người, baseline tính trên cả nhóm 200–1.000 người không còn đúng, và actor có thể rơi vào diện được miễn lập hồ sơ. Mỗi lần đổi phạm vi phải kiểm lại cả dữ liệu lẫn luật.
+
+### Trần Quang Hà - 2A202603962
+
+**Phần việc phụ trách:**
+
+- Quyết định (mục 8): đánh giá 4 rủi ro, chốt kết luận Go / Not Yet / No-Go và ngưỡng dừng cho báo cáo nhóm.
+- Hỗ trợ hoàn thiện Problem Statement v1 và tiêu chí đánh giá (mục 7).
+- CP3: pitch 3 candidate từ báo cáo cá nhân (#13–#15) và thảo luận chọn bài toán chung.
+
+**Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
+
+- **Mục 8 — Đánh giá 4 rủi ro & chốt quyết định (8.1–8.2):** Đối chiếu số liệu khảo sát 14 người, Assumption Map, phản biện mục 5 và thiết kế HITL để chấm 4 rủi ro (nâng Viability lên mức **Cao** do vướng bảo mật Luật 91/2025 và thiếu hạ tầng LLM được duyệt ở DN 50–200 người); chuyển kết luận sang **`Not Yet`** kèm 4 bước kiểm chứng trong 2 tuần và 4 ngưỡng dừng đo được, đồng thời điền `Quyết định cuối: Not Yet` tại mục 1.
+- **Mục 7 — Hỗ trợ hoàn thiện Problem Statement v1 & tiêu chí đánh giá:** Hoàn thiện đủ 9 trường `v1` xử lý hết 5 điểm phản biện từ mục 5 (thu hẹp Actor sang DN không thuộc diện miễn trừ, tách target 2 nấc và guardrail, giữ Boundary bảo mật); điều chỉnh quy trình theo **Mẫu số 10 (+ Mẫu số 09 nếu chuyển dữ liệu ra nước ngoài)** khớp Điều 18–19 NĐ 356/2025; viết bảng thay đổi `v0 → v1` và 5 tiêu chí đánh giá đầu ra AI cho Bước 3 AI Workflow.
+
+**Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
+
+- `report/team/group_report.md`: mục 1 (`Quyết định cuối`), mục 2.1 (`#13–#15`), mục 7 và mục 8 (`8.1–8.2`).
+- Commit `bec3447` trên nhánh `gr_rp_8_tranquangha`, merge vào `origin/group_report` qua PR #14 (`3507a40`): cập nhật mục 8 (4 rủi ro, `Not Yet`, 4 bước kiểm chứng, 4 ngưỡng dừng) và đồng bộ mục 1.
+- Commit `617d91c` trên nhánh `gr_rp_8_tranquangha`: hoàn thiện mục 7 (`Problem Statement v1`, thay đổi `v0 → v1` và 5 tiêu chí đánh giá).
+- Commit `91eb2c7` trên nhánh `tranquangha_03962`, merge vào `main` qua PR #4 (`04c331f`): tạo báo cáo cá nhân `report/individual/2A202603962_TranQuangHa.md`.
+- Đối chiếu số liệu survey từ `report/assets/image.png`, `image-1.png`, `image-2.png`, `image-3.png` (do nhóm trưởng tải lên).
+
+**Điều mình học được từ phần nhóm:**
+
+- Lúc đầu nhìn vấn đề khá rõ nên mình cũng dễ nghĩ theo hướng chọn `Go` làm pilot luôn. Nhưng khi ngồi rà kỹ 4 rủi ro cho mục 8, thấy 6/14 người đã dùng phần mềm chuyên dụng mà nhóm chưa hỏi ra tên gì, rồi hợp đồng đưa vào lại đụng ngay Luật 91/2025, nên chọn `Not Yet` với mấy mốc kiểm tra trong 2 tuần hợp lý hơn nhiều.
+- Làm phần cuối (mục 7–8) tưởng tách riêng được, nhưng thực tế cứ đụng vào là phải đọc ngược lại từ mục 3 đến mục 6. Chỉ một chỗ thay đổi như survey tăng từ 9 lên 14 người hay kiểm tra lại Mẫu 10 với Mẫu 09 trong Nghị định 356 là phạm vi actor, số liệu và ngưỡng dừng ở dưới đều phải chỉnh theo cho khớp.
