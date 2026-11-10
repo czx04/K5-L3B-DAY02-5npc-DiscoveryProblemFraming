@@ -38,23 +38,37 @@ Gợi ý vai trò (một người có thể giữ nhiều vai): điều phối t
 
 Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `HoVaTen-MSSV`.
 
-### HoVaTen-MSSV
+### Ngô Minh Cương - 2A202603954
 
 **Phần việc phụ trách:**
 
--
+- CP6: mức can thiệp AI (mục 6 của báo cáo nhóm: ma trận độ mơ hồ × độ phức tạp, so sánh 4 mức, AI Canvas rút gọn, 2 câu hỏi Google PAIR).
+- CP3: pitch 3 candidate từ báo cáo cá nhân (#4–#6; Card #1 là bàn giao ca trực sự cố kỹ thuật On-call Handover).
+- Đóng vai trò phản biện chính trong nhóm (đặt câu hỏi về rào cản thuê tư vấn ngoài và bảo mật dữ liệu).
 
 **Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
 
--
+- **6.1 Ma trận độ mơ hồ × độ phức tạp:** Xác định bài toán nằm ở ô "Độ mơ hồ trung bình × Độ phức tạp cao". Lập luận dựa trên số liệu survey 14 người: độ phức tạp cao do 71.4% (10/14) kẹt ở gom hợp đồng bên thứ ba (cloud, agency, vận chuyển) và 71.4% kẹt ở việc hỏi các phòng ban; độ mơ hồ trung bình vì biểu mẫu đầu ra (Mẫu 09/10 theo NĐ 356) và phân loại dữ liệu (Điều 3, 4 Luật 91) hoàn toàn xác định theo luật.
+- **6.2 So sánh 4 mức (No AI, Rule, Workflow, Agent):** 
+  - Chỉ ra sự thất bại của No AI bằng số liệu survey: 71.4% dùng Google Form và 50% dùng Excel/Word thủ công khiến 64.3% mất từ 2 tuần đến trên 1 tháng, 71.4% kêu khó mức 4–5/5.
+  - Loại Rule vì không thể bóc tách ngôn ngữ tự nhiên đa dạng từ hợp đồng bên thứ ba.
+  - Chọn Workflow (kết hợp HITL) để tự động trích xuất thực thể, điền nháp Mẫu 09/10 kèm Citation nguồn để DPO duyệt.
+  - Bác bỏ Agent vì rủi ro pháp lý quá lớn: người làm chính là DPO (42.9%) và IT Security (42.9%), cơ quan quản lý (Cục A05) bắt buộc pháp nhân ký số chịu trách nhiệm, không chấp nhận AI tự nộp.
+- **6.3 AI Canvas rút gọn:** Điền đủ 6 ô (Prediction, Judgment, Action, Outcome, Input, Feedback), gắn trực tiếp mục tiêu với số liệu survey (kéo giảm thời gian từ >1 tháng xuống < 4 ngày; hỗ trợ cập nhật định kỳ cho 64.3% doanh nghiệp).
+- **6.4 Hai câu hỏi Google PAIR:** 
+  - Augment vs Automate: Chứng minh người dùng dứt khoát muốn "được hỗ trợ" (Augment) vì 85.8% người phụ trách là DPO và IT Security tự làm nội bộ/kết hợp tư vấn, phải tự chịu trách nhiệm giải trình trước thanh tra.
+  - Báo nhầm vs Bỏ sót: Chứng minh "Bỏ sót" (False Negative) nguy hiểm hơn rất nhiều (28.6% đang kẹt ở khâu sửa và bổ sung sau khi bị yêu cầu; bỏ sót sẽ bị trả hồ sơ hoặc phạt tới 5% doanh thu). Thiết kế giải pháp ưu tiên High Recall, gắn cờ Review Flag khi confidence 60%–85% và cung cấp giao diện Citation đối chiếu song song.
+- Có dùng AI để gợi ý cấu trúc bảng so sánh 4 mức và câu hỏi PAIR. Số liệu khảo sát và các lập luận phản biện ranh giới trách nhiệm pháp lý do mình tự tổng hợp từ kết quả Google Form; chi tiết ghi ở bảng "Dùng AI" trong báo cáo cá nhân.
 
 **Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
 
--
+- `report/team/group_report.md`: mục 6 (6.1, 6.2, 6.3, 6.4).
+- Nhánh làm việc riêng: `gr_ngominhcuong` (soạn thảo mục 6 trên nhánh riêng để giữ nguyên template các mục khác khi tạo PR).
+- Báo cáo cá nhân: `report/individual/2A202603954_NgoMinhCuong.md` (mục 2 Card #1 On-call, mục 4 nhật ký tham gia, mục 5 bảng dùng AI, mục 6 reflection).
+- Số liệu khảo sát sử dụng trong mục 6 lấy từ file Google Sheet khảo sát thực tế (14 phản hồi): `report/assets/image.png`, `image-1.png`, `image-2.png`, `image-3.png`.
 
 **Điều mình học được từ phần nhóm:**
-
--
+- Bài học về phối hợp Git khi làm việc nhóm. Ban đầu khi viết bài, việc hiểu sai nhánh dễ dẫn đến ghi đè toàn bộ file của nhóm. Tôi học được cách làm việc trên nhánh tính năng riêng (`gr_ngominhcuong` và `team_ngominhcuong`), chỉ cập nhật đúng phần được phân công và giữ nguyên vẹn nội dung của các bạn khác để tránh xung đột khi merge PR.
 
 ### Dư Văn Hùng - 2A202603975
 
