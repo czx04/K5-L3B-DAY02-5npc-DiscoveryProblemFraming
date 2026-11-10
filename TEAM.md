@@ -138,3 +138,32 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 
 - Lúc đầu nhìn vấn đề khá rõ nên mình cũng dễ nghĩ theo hướng chọn `Go` làm pilot luôn. Nhưng khi ngồi rà kỹ 4 rủi ro cho mục 8, thấy 6/14 người đã dùng phần mềm chuyên dụng mà nhóm chưa hỏi ra tên gì, rồi hợp đồng đưa vào lại đụng ngay Luật 91/2025, nên chọn `Not Yet` với mấy mốc kiểm tra trong 2 tuần hợp lý hơn nhiều.
 - Làm phần cuối (mục 7–8) tưởng tách riêng được, nhưng thực tế cứ đụng vào là phải đọc ngược lại từ mục 3 đến mục 6. Chỉ một chỗ thay đổi như survey tăng từ 9 lên 14 người hay kiểm tra lại Mẫu 10 với Mẫu 09 trong Nghị định 356 là phạm vi actor, số liệu và ngưỡng dừng ở dưới đều phải chỉnh theo cho khớp.
+
+
+### HoangMinhQuyen-2A202603961
+
+**Phần việc phụ trách:**
+
+- Đưa ra candidate được nhóm chọn (#1 Hồ sơ đánh giá tác động dữ liệu cá nhân).
+- CP6 — Quyết định: mục 8 (4 rủi ro, quyết định, ngưỡng dừng), mục 9 và mục 10 của `group_report.md`.
+
+**Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
+
+- Pitch 3 candidate #1, #2, #3 (bảng 2.1); #1 được chọn với 28 điểm, #2 vào shortlist (bảng 2.4).
+- Đọc toàn văn Nghị định 356/2025/NĐ-CP để kiểm thông tin nhóm đang dùng; phát hiện hồ sơ đánh giá tác động dùng Mẫu số 10 (Điều 19), không phải Mẫu số 09.
+- Soạn mục 8: chấm 4 rủi ro từ số liệu survey CP4, đề xuất Not Yet và 3 ngưỡng dừng đo được.
+- Soạn mục 9 (hạn chế, hướng tiếp theo) và mục 10 (tài liệu tham khảo, đã kiểm link mở được).
+
+**Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
+
+- `group_report.md`: bảng 2.1 (pitch #1–#3), mục 8, 9, 10.
+- Commit trên nhánh `group_report_quyen`: `a8e3145`, `10dee2d`.
+- Báo cáo cá nhân: `report/individual/2A202603961_HoangMinhQuyen.md` (commit `5f4f107`, `12dc8ca`).
+
+**Điều mình học được từ phần nhóm:**
+
+- Luôn đi từ việc hiểu bài toán đến khi làm solution
+- Nghiên cứu và tìm hiểu kĩ các khả năng trước khi đầu tư thời gian và chi phí cho phần giải pháp
+- Tham khảo nhiều góc nhìn và góp ý phản biện để quan điểm trở nên chắc chắn hơn
+
+
